@@ -1,0 +1,158 @@
+/* tints */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #4c575c;
+  
+}
+
+.wrapper {
+  width: 120rem;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.4rem 0;
+}
+
+.logo {
+  width: 5rem;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+  list-style: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+nav ul li {
+  text-transform: uppercase;
+  position: relative;
+}
+
+.list-item::after{
+  position:absolute;
+  content: "";
+  width: 0;
+  bottom: -8px;
+  left: 0 ;
+  transition: width ease .5s;
+  border: 2px solid white;
+}
+
+.list-item:hover::after{
+  border: 2px solid #be4d25;
+  width: 100%;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #4c575c;
+}
+
+.resume {
+  background-color: #be4d25;
+  color: white;
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  margin-left: 16rem;
+}
+
+.hero {
+  margin-top: 4.8rem;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.left-col h1{
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 4.8rem;
+  font-weight: 700;
+}
+
+.left-col p{
+  margin-top: 2.4rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.hero-btns{
+  display: flex;
+  gap: 2.4rem;
+  margin-top: 4.8rem;
+  width: 48rem;
+}
+
+
+.hero-btns a{
+  font-weight: 500;
+  font-size: 1.8rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+.btn{
+  padding: 1.6rem 2.4rem;
+  border-radius: 8px;
+  text-transform: uppercase;
+  transition: all ease .3s;
+}
+
+.btn-contact:link,
+.btn-contact:visited{
+border: 2px solid #4c575c;
+color: #4c575c;
+flex-grow: 1;
+}
+
+.btn-contact:hover,
+.btn-contact:active{
+  background-color: #4c575c;
+  color: white;
+}
+
+.btn-project:link,
+.btn-project:visited{
+background-color: #be4d25;
+color: white;
+}
+
+.btn-project:hover,
+.btn-project:active{
+background-color: #722e16;
+}
+
+.right-col {
+  /* background-image:  url("./Hero.jpg") ;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  /* background-image: url('./Hero.jpg'); */
+
+}
+
+.hero-img{
+  width: 100%;
+}
