@@ -14,13 +14,13 @@
     <title>Welcome to my Web site |</title>
   </head>
   <body>
-    <div class="wrapper">
+    <section id="section-hero" class="section-hero wrapper">
       <header>
-        <img class="logo" src="logo.png" alt="Brand logo" />
+        <img class="logo" src="logo_yellow.png" alt="Brand logo" />
         <nav>
           <ul>
             <li class="list-item"><a href="#">Home</a></li>
-            <li class="list-item"><a href="#">about</a></li>
+            <li class="list-item"><a href="#section-about">about</a></li>
             <li class="list-item"><a href="#">Projects</a></li>
             <li class="list-item"><a href="#">tools</a></li>
             <li class="list-item"><a href="#">contact</a></li>
@@ -28,9 +28,11 @@
           </ul>
         </nav>
       </header>
-      <div class="hero">
+      <div class="hero-content">
         <div class="left-col">
-          <h1 class="">React, javaScript developer</h1>
+          <h1 class="">
+            <span class="react">React</span> , javaScript developer
+          </h1>
           <p>
             Hey there! I'm Guebre Adama. I'm a front end developer base in Italy
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, qui?
@@ -39,14 +41,50 @@
             optio.
           </p>
           <div class="hero-btns">
-            <a class="btn btn-contact" href="#">Hire me</a>
+            <a class="btn btn-hire-me" href="#">Hire me</a>
             <a class="btn btn-project" href="#">go to projects &rarr;</a>
           </div>
         </div>
         <div class="right-col">
-          <img class="hero-img" src="./Hero.jpg" alt="Hero image" />
+          <img class="hero-img" src="./developer.avif" alt="Hero image" />
         </div>
       </div>
-    </div>
+    </section>
+    <section id="section-about" class="section-about">
+      <p class="heading-about-me">About me</p>
+      
+        <div class="about">
+          <h2>Who i am ?</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+            accusantium doloribus nulla harum, repellat et dignissimos esse
+            consequatur quia error
+          </p>
+          <h2>Waht i do</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+            accusamus facilis ab animi quas fugit adipisci at repudiandae,
+            voluptatum veniam exercitationem velit, facere in dignissimos
+            debitis eius iure repellendus voluptatem.
+          </p>
+          <h2>What are my passion</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut hic sunt
+            facere? Cupiditate repudiandae aut minus. Beatae voluptatibus
+            consectetur animi ipsam quam laboriosam aliquid, accusamus,
+            explicabo temporibus omnis veritatis fugit.
+          </p>
+        </div>
+        <div class="gallery">
+          <img src="Hero.jpg" alt="" />
+        </div>
+    </section>
+    <section id="section-tools" class="section-tools wrapper">
+      <div class="fundamentals">
+        <img src="./html5.png" alt=" Html 5 logo" />
+        <img src="./css3.png" alt=" css 3 logo" />
+        <img src="./js.png" alt=" Javascript logo" />
+      </div>
+    </section>
   </body>
 </html>
