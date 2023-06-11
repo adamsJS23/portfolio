@@ -1,0 +1,24 @@
+{
+  "name": "portofolio",
+  "version": "1.0.0",
+  "description": "My protofolio project",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamsJS23/portfolio.git"
+  },
+  "author": "Guebre Adama",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adamsJS23/portfolio/issues"
+  },
+  "homepage": "https://github.com/adamsJS23/portfolio#readme",
+  "devDependencies": {
+    "parcel": "^2.9.1"
+  }
+}
