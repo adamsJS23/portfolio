@@ -201,16 +201,20 @@ nav ul li a {
 }
 /* about me */
 .section-about {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(2, 1fr);
-  row-gap: 2.4rem;
+  row-gap: 2.4rem; */
   background-color: #231f20;
   color: white;
   padding: 2.4rem 9.6rem;
 }
 
+.about-wrapper {
+  display: flex;
+  gap: 2.4rem;
+}
+
 .heading-secondary {
-  grid-column: 1/-1;
   justify-self: center;
   font-family: "Playfair Display", sans-serif;
   font-size: 3.2rem;
@@ -307,8 +311,8 @@ nav ul li a {
   border-bottom: 2px solid #ffcb05;
 }
 
-
-input::placeholder,textarea::placeholder{
+input::placeholder,
+textarea::placeholder {
   color: #ffcb05;
   font-size: 1.4rem;
 }
@@ -321,7 +325,7 @@ input::placeholder,textarea::placeholder{
   margin-bottom: 2rem;
 }
 
-.btn-form{
+.btn-form {
   border: none;
   background-color: none;
   background-color: #ffcb05;
@@ -329,6 +333,3 @@ input::placeholder,textarea::placeholder{
   font-weight: 500;
   font-size: 1.8rem;
 }
-
-
-
