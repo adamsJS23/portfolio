@@ -51,7 +51,7 @@
       </div>
     </section>
     <section id="section-about" class="section-about">
-      <h2 class="heading-secondary">About me</h2>
+      <h2 class="heading-secondary u-margin-bottom-medium">About me</h2>
       <div class="about-wrapper">
         <div class="about">
           <h3>Who i am ?</h3>
@@ -91,31 +91,24 @@
       <div class="project project--1"></div>
     </section>
     <section class="section-contact">
-      <h2 class="heading-secondary">contact</h2>
+      <h2 class="heading-secondary u-margin-bottom-medium">contact</h2>
       <form class="contact-form">
         <div class="contact-box">
-          <input
-            class="ipt ipt--name"
-            type="text"
-            id="name"
-            placeholder="Full name"
-          />
+          <label for="name">Full name*</label>
+          <input class="ipt ipt--name" type="text" id="name" required />
         </div>
         <div class="contact-box">
-          <input
-            class="ipt ipt--email"
-            type="email"
-            id="email"
-            placeholder="E-mail address"
-          />
+          <label for="email">E-mail address*</label>
+          <input class="ipt ipt--email" type="email" id="email" required />
         </div>
         <div class="contact-box">
+          <label for="message">Message*</label>
           <textarea
             class="ipt ipt--message"
             type="textarea"
             rows="10"
             id="message"
-            placeholder="What's your message"
+            required
           ></textarea>
         </div>
         <button class="btn btn-form">get in touch</button>
