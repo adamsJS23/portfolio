@@ -201,12 +201,13 @@ nav ul li a {
 }
 /* about me */
 .section-about {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  row-gap: 2.4rem;
   background-color: #231f20;
   color: white;
   padding: 2.4rem 9.6rem;
+}
+
+.about-wrapper{
+  display: flex;
 }
 
 .heading-secondary {
