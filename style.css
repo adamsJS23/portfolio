@@ -210,16 +210,21 @@ nav ul li a {
 }
 
 .heading-secondary {
+<<<<<<< Updated upstream
   grid-column: 1/-1;
   justify-self: center;
+=======
+>>>>>>> Stashed changes
   font-family: "Playfair Display", sans-serif;
   font-size: 3.2rem;
   font-weight: 700;
   color: #ffcb05;
+  text-align: center;
 }
 
 .about {
   padding: 2.4rem 2.4rem 2.4rem 0;
+  flex: 0 0 60rem;
 }
 .about h3 {
   font-family: "Playfair Display", sans-serif;
@@ -292,25 +297,43 @@ nav ul li a {
 
 /* CONTACT */
 .section-contact {
-  /* background-color: #231f20; */
-  height: 100vh;
-  /* color: white; */
+  background-color: #231f20;
+  /* height: 100vh; */
+  color: white;
   padding: 10rem;
 }
 
 .ipt {
   font-size: 1.8rem;
-  padding: 1rem 0;
+  padding: 1rem 0 1rem .5rem;
   width: 50rem;
   outline: none;
   border: none;
   border-bottom: 2px solid #ffcb05;
+  color: white;
+  background-color:#393536 ;
+
+  display: block;
 }
 
+label{
+  display: block;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+
+<<<<<<< Updated upstream
 
 input::placeholder,textarea::placeholder{
   color: #ffcb05;
   font-size: 1.4rem;
+=======
+input::placeholder,
+textarea::placeholder {
+  /* color: #ffcb05; */
+  font-size: 1.6rem;
+>>>>>>> Stashed changes
 }
 
 /* input[placeholder$="name"]{
@@ -318,17 +341,36 @@ input::placeholder,textarea::placeholder{
 } */
 
 .contact-form div:not(:last-child) {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+}
+
+.contact-form{
+  /* background-color:#4f4c4d ; */
 }
 
 .btn-form{
   border: none;
   background-color: none;
   background-color: #ffcb05;
-  color: #231f20;
+  /* color: white; */
   font-weight: 500;
   font-size: 1.8rem;
 }
 
+<<<<<<< Updated upstream
 
 
+=======
+/* utilities */
+.u-margin-bottom-small{
+  margin-bottom: 4rem;
+}
+.u-margin-bottom-medium{
+  margin-bottom: 8rem;
+  
+}
+.u-margin-bottom-big{
+  margin-bottom: 16rem;
+
+}
+>>>>>>> Stashed changes
