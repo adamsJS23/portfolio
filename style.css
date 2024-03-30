@@ -99,6 +99,7 @@ nav ul li a {
   font-family: "Playfair Display", sans-serif;
   font-size: 4.8rem;
   font-weight: 700;
+  margin-bottom: 4rem;
 }
 
 .react {
@@ -116,9 +117,9 @@ nav ul li a {
 }
 
 .left-col p {
-  margin-top: 2.4rem;
   font-size: 1.8rem;
   font-weight: 500;
+  margin-bottom: 6rem;
 }
 
 .hero-btns {
@@ -192,15 +193,18 @@ nav ul li a {
   width: 100%;
   height: 70%;
 }
-  
+
 /* about me */
 .section-about {
   background-color: #231f20;
+  background-color: #d3d2d2;
+  background-color: #f7f7f7;
+  background-color: #f3f3f3;
   color: white;
   padding: 2.4rem 9.6rem;
 }
 
-.about-wrapper{
+.about-wrapper {
   display: flex;
 }
 
@@ -277,6 +281,79 @@ nav ul li a {
 .section-projects {
   height: 100vh;
   background-color: #ffcb05;
+  background-color: #fff5cd;
+}
+
+.section-features {
+  padding: 15rem 0;
+  margin: 0 auto;
+  max-width: 120rem;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, min-content));
+  grid-column-gap: 6rem;
+  grid-row-gap: 6rem;
+  justify-content: center;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  /* gap: 3rem; */
+}
+
+.feature__icon-box {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.feature__icon-box--quick {
+  background-color: #f8d2d1;
+}
+.feature__icon-box--detail {
+  background-color: #e9e1f4;
+}
+.feature__icon-box--solving {
+  background-color: #cdeff7;
+}
+.feature__icon-box--team {
+  background-color: #fcf4ce;
+}
+
+.feature__icon {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.feature__icon--quick { 
+  fill: #2c0605;
+}
+.feature__icon--detail { 
+  fill: #1d1528;
+}
+.feature__icon--solving { 
+  fill: #02151b;
+}
+.feature__icon--team { 
+  fill: #302802;
+}
+
+.feature__title {
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.feature__text {
+  font-size: 1.4rem;
 }
 
 /* CONTACT */
@@ -289,18 +366,18 @@ nav ul li a {
 
 .ipt {
   font-size: 1.8rem;
-  padding: 1rem 0 1rem .5rem;
+  padding: 1rem 0 1rem 0.5rem;
   width: 50rem;
   outline: none;
   border: none;
   border-bottom: 2px solid #ffcb05;
   color: white;
-  background-color:#393536 ;
+  background-color: #393536;
 
   display: block;
 }
 
-label{
+label {
   display: block;
   margin-bottom: 1.5rem;
   text-transform: uppercase;
@@ -320,8 +397,6 @@ textarea::placeholder {
   margin-bottom: 3rem;
 }
 
-
-
 .btn-form {
   border: none;
   background-color: none;
@@ -332,14 +407,12 @@ textarea::placeholder {
 }
 
 /* utilities */
-.u-margin-bottom-small{
+.u-margin-bottom-small {
   margin-bottom: 4rem;
 }
-.u-margin-bottom-medium{
+.u-margin-bottom-medium {
   margin-bottom: 8rem;
-  
 }
-.u-margin-bottom-big{
+.u-margin-bottom-big {
   margin-bottom: 16rem;
-
 }
