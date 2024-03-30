@@ -187,25 +187,27 @@ nav ul li a {
 .section-about {
   color: #fff;
   background-color: #231f20;
-  grid-template-columns: repeat(2, 1fr);
-  row-gap: 2.4rem;
   padding: 2.4rem 9.6rem;
-  display: grid;
 }
 
-.heading-about-me {
-  grid-column: 1 / -1;
-  justify-self: center;
+.about-wrapper {
+  display: flex;
+}
+
+.heading-secondary {
+  color: #ffcb05;
+  text-align: center;
   font-family: Playfair Display, sans-serif;
   font-size: 3.2rem;
   font-weight: 700;
 }
 
 .about {
+  flex: 0 0 60rem;
   padding: 2.4rem 2.4rem 2.4rem 0;
 }
 
-.about h2 {
+.about h3 {
   margin-top: 4.8rem;
   font-family: Playfair Display, sans-serif;
   font-size: 2.4rem;
@@ -258,6 +260,64 @@ nav ul li a {
 
 .push-back {
   transform: translate(-100%);
+}
+
+.section-projects {
+  height: 100vh;
+  background-color: #ffcb05;
+}
+
+.section-contact {
+  color: #fff;
+  background-color: #231f20;
+  padding: 10rem;
+}
+
+.ipt {
+  width: 50rem;
+  color: #fff;
+  background-color: #393536;
+  border: none;
+  border-bottom: 2px solid #ffcb05;
+  outline: none;
+  padding: 1rem 0 1rem .5rem;
+  font-size: 1.8rem;
+  display: block;
+}
+
+label {
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  display: block;
+}
+
+input::placeholder, textarea::placeholder {
+  font-size: 1.6rem;
+}
+
+.contact-form div:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.btn-form {
+  background-color: none;
+  background-color: #ffcb05;
+  border: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 4rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 8rem;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 16rem;
 }
 
 /*# sourceMappingURL=index.3a01df49.css.map */
