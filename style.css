@@ -214,7 +214,16 @@ nav ul li a {
   font-size: 3.2rem;
   font-weight: 700;
   color: #ffcb05;
+  color: #231f20;
   text-align: center;
+  margin-bottom: 8rem;
+}
+
+.heading-tertiary {
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #231f20;
 }
 
 .about {
@@ -279,9 +288,31 @@ nav ul li a {
 }
 
 /* PROJECTS */
-.dev-icon{
-  width: 3rem;
-  height: 3rem;
+
+
+.features__icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, min-content));
+  grid-column-gap: 0.5rem;
+  margin-bottom: 8rem;
+  /* padding: 0 4rem; */
+
+}
+
+.feature__icon-container {
+  height: 10rem;
+  width: 10rem;
+  border: solid 2px #f7f7f7;
+  border-radius: 1rem;
+  box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dev-icon {
+  width: 5rem;
+  height: 5rem;
 }
 
 .section-projects {
@@ -294,11 +325,13 @@ nav ul li a {
   padding: 15rem 0;
   margin: 0 auto;
   max-width: 120rem;
+  /* background-color: #fff;
+  background-color: #f8f8f8; */
 }
 
 .features {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(27rem, min-content));
+  grid-template-columns: repeat(auto-fit, minmax(24rem, min-content));
   grid-column-gap: 6rem;
   grid-row-gap: 6rem;
   justify-content: center;
@@ -339,17 +372,17 @@ nav ul li a {
   height: 3.2rem;
 }
 
-.feature__icon--quick { 
+.feature__icon--quick {
   fill: #2c0605;
   fill: #e03331;
 }
-.feature__icon--detail { 
+.feature__icon--detail {
   fill: #9b76cc;
 }
-.feature__icon--solving { 
+.feature__icon--solving {
   fill: #217694;
 }
-.feature__icon--team { 
+.feature__icon--team {
   fill: #f2ce21;
 }
 
@@ -366,6 +399,8 @@ nav ul li a {
 /* CONTACT */
 .section-contact {
   background-color: #231f20;
+  background-color: #e9e9e9;
+  background-color: #656263;
   /* height: 100vh; */
   color: white;
   padding: 10rem;
@@ -379,7 +414,7 @@ nav ul li a {
   border: none;
   border-bottom: 2px solid #ffcb05;
   color: white;
-  background-color: #393536;
+  background-color: #e9e9e9;
 
   display: block;
 }
