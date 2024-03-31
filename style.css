@@ -201,6 +201,7 @@ nav ul li a {
   background-color: #f7f7f7;
   background-color: #f3f3f3;
   color: white;
+  color: #231f20;
   padding: 2.4rem 9.6rem;
 }
 
@@ -292,7 +293,7 @@ nav ul li a {
 
 .features {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(24rem, min-content));
+  grid-template-columns: repeat(auto-fit, minmax(27rem, min-content));
   grid-column-gap: 6rem;
   grid-row-gap: 6rem;
   justify-content: center;
@@ -335,15 +336,16 @@ nav ul li a {
 
 .feature__icon--quick { 
   fill: #2c0605;
+  fill: #e03331;
 }
 .feature__icon--detail { 
-  fill: #1d1528;
+  fill: #9b76cc;
 }
 .feature__icon--solving { 
-  fill: #02151b;
+  fill: #217694;
 }
 .feature__icon--team { 
-  fill: #302802;
+  fill: #f2ce21;
 }
 
 .feature__title {
