@@ -322,14 +322,23 @@ nav ul li a {
 .section-projects {
   background-color: #ffefb4;
   padding: 10rem 0;
+
+  
 }
 
 .project {
+  /* scroll */
+  position: sticky;
+  height: 100vh;
+  top: 0;
+/*  */
+
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 5rem;
   justify-content: center;
   padding: 8rem 0;
+
 }
 
 .project:not(:last-child) {
