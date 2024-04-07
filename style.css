@@ -329,7 +329,7 @@ nav ul li a {
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 5rem;
   justify-content: center;
-  padding:8rem 0;
+  padding: 8rem 0;
 }
 
 .project:not(:last-child) {
@@ -343,13 +343,16 @@ nav ul li a {
 
 .project--2 {
   /* padding: 8rem 0; */
-  background-color: #bdbcbc;
+  background-color: #b5d1db;
+}
+
+.project--3 {
+  /* padding: 8rem 0; */
+  background-color: #f5bbba;
 }
 
 .project__description {
-  color: #332901;
   align-self: center;
-  background-color: #fff5cd;
   padding: 4rem 4rem;
   border-radius: 0.5rem;
   box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1);
@@ -358,26 +361,26 @@ nav ul li a {
 }
 
 .project__description--1 {
-  color: #332901;
   background-color: #fff5cd;
+  color: #332901;
   transform: translateX(3rem);
 }
 
 .project__description--2 {
-  color: #070606;
-  background-color: #d3d2d2;
+  background-color: #cee1e7;
+  color: #02151b;
   transform: translateX(-6rem);
 }
 
 .project__description--3 {
+  background-color: #f8d2d1;
   color: #332901;
-  background-color: #fff5cd;
   transform: translateX(3rem);
 }
 
 .project__description--4 {
-  color: #332901;
   background-color: #fff5cd;
+  color: #332901;
   transform: translateX(3rem);
 }
 
@@ -387,7 +390,6 @@ nav ul li a {
 }
 
 .project__tech-list {
-  color: #997a03;
   font-size: 1.7rem;
   font-weight: 500;
   margin-bottom: 2rem;
@@ -399,10 +401,10 @@ nav ul li a {
   color: #997a03;
 }
 .project__tech-list--2 {
-  color: #151313;
+  color: #053e52;
 }
 .project__tech-list--3 {
-  color: #997a03;
+  color: #851110;
 }
 .project__tech-list--4 {
   color: #997a03;
@@ -417,40 +419,92 @@ nav ul li a {
 .project__item {
 }
 
-.project__link:link,
-.project__link:visited {
+.project__link--primary:link,
+.project__link--primary:visited,
+.project__link--secondary:link,
+.project__link--secondary:visited {
   display: flex;
   align-items: center;
   gap: 1rem;
   text-decoration: none;
   font-size: 1.6rem;
   font-weight: 600;
-  color: #332901;
   padding: 0.8rem 2rem;
   border-radius: 0.5rem;
   transition: all ease 0.7s;
 }
 
-.project__link--primary {
+.project__link--primary-1 {
   background-color: #ffcb05;
+  color: #332901;
+}
+.project__link--primary-2 {
+  background-color: #10ace1;
+  color: #02151b;
 }
 
-.project__link--primary:hover,
-.project__link--primary:active {
+.project__link--primary-3 {
+  background-color: #C69493;
+  color: #2c0605;
+}
+
+.project__link--primary-4 {
+  background-color: #ffcb05;
+  color: #332901;
+}
+
+.project__link--primary-5 {
+  background-color: #ffcb05;
+  color: #332901;
+}
+
+.project__link--primary-1:hover,
+.project__link--primary-1:active {
   background-color: #806603;
   color: #fff5cd;
 }
 
+.project__link--primary-2:hover,
+.project__link--primary-2:active {
+  background-color: #043444;
+  color: #cee1e7;
+}
+
+.project__link--primary-3:hover,
+.project__link--primary-3:active {
+  background-color: #6f0e0d;
+  color: #f8d2d1;
+}
+
 .project__link--secondary {
   background-color: transparent;
-  /* border: 2px solid #ffcb05; */
   box-shadow: inset 0 0 0 1px;
+}
+
+.project__link--secondary-1 {
+  color: #332901;
+}
+
+.project__link--secondary-2 {
+  color: #02151b;
+}
+
+.project__link--secondary-3 {
+  color: #2c0605;
+}
+
+.project__link--secondary-4 {
+  color: #2c0605;
+}
+
+.project__link--secondary-5 {
+  color: #2c0605;
 }
 
 .project__link--secondary:hover,
 .project__link--secondary:active {
   box-shadow: unset;
-  transform: translateY(-0.5rem);
+  transform: translateY(-0.3rem);
   border: none;
 }
 
@@ -461,11 +515,6 @@ nav ul li a {
 }
 
 .project__img {
-  background-image: linear-gradient(
-      rgba(255, 245, 205, 0.7),
-      rgba(255, 245, 205, 0.7)
-    ),
-    url("project-1.png");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -474,14 +523,14 @@ nav ul li a {
   transition: ease all 1s;
 
   /* transform: perspective(800px) rotateY(25deg) scale(.8) rotateX(10deg); */
-  transform: perspective(800px) translateX(-3rem) rotateY(25deg) scale(1)
-    rotateX(10deg);
+  
 }
 
 .project__img--1 {
+  /* #FF--CD */
   background-image: linear-gradient(
-      rgba(255, 245, 205, 0.7),
-      rgba(255, 245, 205, 0.7)
+      rgb(255, 245, 205, 0.8),
+      rgba(255, 245, 205, 0.8)
     ),
     url("project-1.png");
 
@@ -491,9 +540,10 @@ nav ul li a {
 }
 
 .project__img--2 {
+  /* cee1e7 */
   background-image: linear-gradient(
-      rgba(211, 210, 210, 0.7),
-      rgba(211, 210, 210, 0.7)
+      rgb(206, 225, 231, 0.8),
+      rgba(206, 225, 231, 0.8)
     ),
     url("project-2.png");
 
@@ -504,15 +554,16 @@ nav ul li a {
 
 .project__img--3 {
   background-image: linear-gradient(
-      rgba(255, 245, 205, 0.7),
-      rgba(255, 245, 205, 0.7)
+      rgba(248, 210, 209, 0.8),
+      rgba(248, 210, 209, 0.8)
     ),
-    url("project-1.png");
+    url("project-3.png");
 
   /* transform: perspective(800px) rotateY(25deg) scale(.8) rotateX(10deg); */
   transform: perspective(800px) translateX(-3rem) rotateY(25deg) scale(1)
     rotateX(10deg);
 }
+
 .project__img--4 {
   background-image: linear-gradient(
       rgba(255, 245, 205, 0.7),
@@ -525,7 +576,19 @@ nav ul li a {
     rotateX(10deg);
 }
 
-.project__img:hover {
+.project__img--5 {
+  background-image: linear-gradient(
+      rgba(255, 245, 205, 0.7),
+      rgba(255, 245, 205, 0.7)
+    ),
+    url("project-1.png");
+
+  /* transform: perspective(800px) rotateY(25deg) scale(.8) rotateX(10deg); */
+  transform: perspective(800px) translateX(-3rem) rotateY(25deg) scale(1)
+    rotateX(10deg);
+}
+
+.project__img--1:hover {
   background-image: url("project-1.png");
   /* transform: perspective(800px) rotateY(-15deg) translateY(-50px) rotateX(10deg) scale(.9); */
   /* transform: perspective(800px) rotateY(0deg)  rotateX(0deg) scale(1); */
@@ -533,6 +596,21 @@ nav ul li a {
 }
 
 .project__img--2:hover {
+  background-image: url("project-2.png");
+  transform: perspective(800px) translateX(6rem) scale(1);
+}
+
+.project__img--3:hover {
+  background-image: url("project-2.png");
+  transform: perspective(800px) translateX(-3rem) scale(1);
+}
+
+.project__img--4:hover {
+  background-image: url("project-2.png");
+  transform: perspective(800px) translateX(6rem) scale(1);
+}
+
+.project__img--5:hover {
   background-image: url("project-2.png");
   transform: perspective(800px) translateX(6rem) scale(1);
 }
