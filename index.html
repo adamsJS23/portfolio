@@ -1126,7 +1126,7 @@
           </div>
         </div>
         <form class="contact-form">
-          <p>Send a message</p>
+          <p class="contact-form__title">Send a message</p>
           <div class="form__group">
             <div class="contact-box">
               <label for="first-name">First name*</label>
@@ -1182,7 +1182,12 @@
               required
             ></textarea>
           </div>
-          <button class="btn btn-form">get in touch</button>
+          <button class="btn btn-form">
+            <svg class="btn-icon btn-icon--send">
+              <use xlink:href="sprite.svg#icon-paper-plane"></use>
+            </svg>
+            <span>Get in Touch</span>
+          </button>
         </form>
       </div>
     </section>
