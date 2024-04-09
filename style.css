@@ -696,7 +696,7 @@ nav ul li a {
 
 .features {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(24rem, min-content));
+  grid-template-columns: repeat(auto-fit, minmax(28rem, min-content));
   grid-column-gap: 6rem;
   grid-row-gap: 6rem;
   justify-content: center;
