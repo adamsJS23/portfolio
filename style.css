@@ -140,10 +140,39 @@ nav ul li a {
 }
 
 .btn {
-  padding: 1.6rem 2.4rem;
+  padding: 1.5rem 2rem;
   border-radius: 8px;
-  text-transform: uppercase;
   transition: all ease 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  overflow: hidden;
+}
+
+.btn-form{
+  position: relative;
+  cursor: pointer;
+  border-radius:15px ;
+}
+
+.btn-form::before {
+  content: "";
+  width: 27%;
+  height: 100%;
+  background-color: #ffd537;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.btn-icon {
+  height: 2rem;
+  width: 2rem;
+  fill: currentColor;
+  position: relative;
+  z-index: 3;
 }
 
 .btn-hire-me:link,
@@ -786,7 +815,6 @@ nav ul li a {
 .contact-info p {
   font-size: 2rem;
   font-weight: 500;
-  /* text-align: center; */
 
   margin-bottom: 3rem;
 }
@@ -811,7 +839,8 @@ nav ul li a {
 }
 
 .contact-form p {
-  font-size: 1.6rem;
+  font-size: 2rem;
+  font-weight: 500;
   margin-bottom: 6rem;
 }
 
@@ -862,10 +891,8 @@ textarea::placeholder {
 
 .btn-form {
   border: none;
-  background-color: none;
   background-color: #ffcb05;
-  /* color: white; */
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.8rem;
 }
 
