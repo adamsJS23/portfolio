@@ -227,13 +227,9 @@ nav ul li a {
 
 /* about me */
 .section-about {
-  background-color: #231f20;
-  background-color: #d3d2d2;
-  background-color: #f7f7f7;
-  background-color: #f3f3f3;
-  color: white;
-  color: #231f20;
-  padding: 2.4rem 9.6rem;
+  background-color: #fffcee;
+  color: #332901;
+  padding: 8rem 9.6rem;
 }
 
 .about-wrapper {
@@ -269,13 +265,13 @@ nav ul li a {
   font-family: "Playfair Display", sans-serif;
   font-size: 3.5rem;
   font-weight: 500;
-  margin-top: 4.8rem;
+  margin-bottom: 3.2rem;
 }
 
 .about p {
   margin-top: 1.6rem;
   font-size: 1.8rem;
-  /* font-weight: 500; */
+  margin-bottom: 4.8rem;
 }
 
 .gallery {
@@ -330,6 +326,10 @@ nav ul li a {
   grid-column-gap: 0.5rem;
   width: 85rem;
   margin: 0 auto;
+  /* margin-bottom: 8rem; */
+}
+
+.features__icons:nth-child(4) {
   margin-bottom: 8rem;
 }
 
@@ -368,7 +368,7 @@ nav ul li a {
   border-radius: 9px;
   overflow: hidden;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-  transition: transform ease 0.3s .3s;
+  transition: transform ease 0.3s 0.3s;
   cursor: pointer;
 
   position: relative;
@@ -386,8 +386,6 @@ nav ul li a {
   transform: translateY(0);
 }
 
-
-
 .project__img {
   width: 100%;
   height: 100%;
@@ -400,7 +398,7 @@ nav ul li a {
   padding: 2rem;
   background-color: #fefb32;
   background-color: #fffefa;
-  opacity: .85;
+  opacity: 0.85;
   position: absolute;
 
   width: 100%;
@@ -408,7 +406,7 @@ nav ul li a {
   bottom: 0;
 
   transform: translateY(100%);
-  transition: transform ease .3s;
+  transition: transform ease 0.3s;
 }
 
 .project__content-text {
@@ -426,7 +424,7 @@ nav ul li a {
   font-weight: 500;
 }
 
-.project__logo{
+.project__logo {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
