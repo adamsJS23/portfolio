@@ -240,22 +240,29 @@ nav ul li a {
   font-family: "Playfair Display", sans-serif;
   font-size: 4.7rem;
   font-weight: 700;
-  color: #ffcb05;
   color: #231f20;
   text-align: center;
   margin-bottom: 8rem;
+}
+
+.heading-tertiary {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 2.7rem;
+  font-weight: 700;
+  color: #231f20;
+  margin-bottom: 6rem;
 }
 
 .color-yellow-dark {
   color: #332901;
 }
 
-.heading-tertiary {
+/* .heading-tertiary {
   font-family: "Inter", sans-serif;
   font-size: 2rem;
   font-weight: 600;
   color: #231f20;
-}
+} */
 
 .about {
   padding: 2.4rem 2.4rem 2.4rem 0;
@@ -368,6 +375,8 @@ nav ul li a {
   grid-column-gap: 4rem;
   grid-row-gap: 4rem;
   color: #332901;
+
+  margin-bottom: 12rem;
 }
 
 .project {
