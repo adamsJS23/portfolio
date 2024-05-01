@@ -697,8 +697,12 @@ textarea::placeholder {
 }
 
 .footer__content {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  justify-content: center;
 }
 
 .footer__list {
@@ -718,12 +722,20 @@ textarea::placeholder {
   justify-content: space-between;
 }
 
+
 .footer__link {
   text-decoration: none;
   font-size: 1.6rem;
   font-weight: 600;
   text-transform: uppercase;
   color: #555;
+
+  justify-self: center;
+  margin-left: 8rem;
+}
+
+.footer__box--3{
+  justify-self: end;
 }
 
 .footer__socials {
