@@ -331,6 +331,7 @@ nav ul li a {
   grid-column-gap: 0.5rem;
   width: 85rem;
   margin: 0 auto;
+  justify-content: center;
   /* margin-bottom: 8rem; */
 }
 
