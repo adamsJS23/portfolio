@@ -685,8 +685,8 @@ textarea::placeholder {
   width: 4rem;
 }
 
-.footer__thanks {
-  font-size: 1.7rem;
+.footer__thanks,.footer__getting-around,.footer__lets-chat {
+  font-size: 2rem;
   font-weight: 600;
 }
 
@@ -697,12 +697,13 @@ textarea::placeholder {
 }
 
 .footer__content {
-  /* display: flex;
-  justify-content: space-between; */
-
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   justify-content: center;
+}
+
+.footer__links{
+  margin-left: 8rem;
 }
 
 .footer__list {
@@ -722,7 +723,9 @@ textarea::placeholder {
   justify-content: space-between;
 }
 
-
+.footer__getting-around{
+  margin-bottom: 2rem;
+}
 .footer__link {
   text-decoration: none;
   font-size: 1.6rem;
@@ -731,7 +734,12 @@ textarea::placeholder {
   color: #555;
 
   justify-self: center;
-  margin-left: 8rem;
+}
+
+
+
+.footer__list-item{
+  padding: 5px 0;
 }
 
 .footer__box--3{
@@ -741,11 +749,6 @@ textarea::placeholder {
 .footer__socials {
   display: flex;
   gap: 2rem;
-}
-
-.footer__lets-chat {
-  font-size: 1.2rem;
-  font-weight: 600;
 }
 
 .footer__social-icon {
