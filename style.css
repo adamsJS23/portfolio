@@ -20,6 +20,15 @@ body {
   color: #231f20;
 }
 
+img {
+  max-width: 100%;
+}
+
+p {
+ line-height: 1.6;
+  text-wrap: balance;
+}
+
 .section-hero {
   height: 100vh;
 }
@@ -145,8 +154,9 @@ nav ul li a {
   transition: all ease 0.3s;
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 10px;
   overflow: hidden;
+  backface-visibility: hidden;
 }
 
 .btn-form {
@@ -175,38 +185,10 @@ nav ul li a {
   z-index: 3;
 }
 
-.btn-hire-me:link,
-.btn-hire-me:visited {
+.btn-hire-me:is(:link, :visited) {
   border: 2px solid #231f20;
   color: #231f20;
-  flex-grow: 1;
-  position: relative;
-  overflow: hidden;
-  z-index: 999;
-}
-
-.btn-hire-me::before {
-  content: " ";
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #231f20;
-  width: 100%;
-  height: 100%;
-  border: 3px solid #231f20;
-  border-radius: 8px;
-  transform: translateX(-100%);
-  transition: all ease 0.3s;
-  z-index: -999;
-}
-
-.btn-hire-me:hover::before {
-  transform: translateX(0%);
-}
-
-.btn-hire-me:hover,
-.btn-hire-me:active {
-  color: white;
+  padding: 0 5.5rem;
 }
 
 .btn-project:link,
@@ -215,9 +197,8 @@ nav ul li a {
   color: #231f20;
 }
 
-.btn-project:hover,
-.btn-project:active {
-  background-color: #e6b705;
+.btn-project:is(:hover, :active) {
+  animation: up-and-down 1s ease-in-out;
 }
 
 .hero-img {
@@ -685,7 +666,9 @@ textarea::placeholder {
   width: 4rem;
 }
 
-.footer__thanks,.footer__getting-around,.footer__lets-chat {
+.footer__thanks,
+.footer__getting-around,
+.footer__lets-chat {
   font-size: 2rem;
   font-weight: 600;
 }
@@ -702,7 +685,7 @@ textarea::placeholder {
   justify-content: center;
 }
 
-.footer__links{
+.footer__links {
   margin-left: 8rem;
 }
 
@@ -723,7 +706,7 @@ textarea::placeholder {
   justify-content: space-between;
 }
 
-.footer__getting-around{
+.footer__getting-around {
   margin-bottom: 2rem;
 }
 .footer__link {
@@ -736,13 +719,11 @@ textarea::placeholder {
   justify-self: center;
 }
 
-
-
-.footer__list-item{
+.footer__list-item {
   padding: 5px 0;
 }
 
-.footer__box--3{
+.footer__box--3 {
   justify-self: end;
 }
 
@@ -770,14 +751,14 @@ textarea::placeholder {
 
 .section-about,
 .section-features,
-.section-projects{
+.section-projects {
   position: relative;
 }
 
 .section-about::after,
 .section-features::after,
-.section-projects::after{
-  content: '';
+.section-projects::after {
+  content: "";
   width: 30%;
   position: absolute;
   background-color: #ffcb05;
@@ -786,4 +767,30 @@ textarea::placeholder {
   left: 50%;
 
   transform: translateX(-50%);
+}
+
+@keyframes up-and-down {
+  16.66% {
+    transform: translateY(8px);
+  }
+
+  33.33% {
+    transform: translateY(-6px);
+  }
+
+  49.99% {
+    transform: translateY(4px);
+  }
+
+  66.66% {
+    transform: translateY(-2px);
+  }
+
+  83.33% {
+    transform: translate(1px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
