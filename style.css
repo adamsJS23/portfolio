@@ -135,7 +135,7 @@ nav ul li a {
 
 .hero-btns {
   display: flex;
-  gap: 2.4rem;
+  gap: 6.4rem;
   margin-top: 2.4rem;
   width: 48rem;
 }
@@ -146,6 +146,7 @@ nav ul li a {
   text-decoration: none;
   display: flex;
   justify-content: center;
+  
 }
 
 .btn {
@@ -186,9 +187,23 @@ nav ul li a {
 }
 
 .btn-hire-me:is(:link, :visited) {
-  border: 2px solid #231f20;
+  display: block;
   color: #231f20;
-  padding: 0 5.5rem;
+  align-self: center;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #000;
+}
+
+.btn-hire-me span{
+  margin-left: .7rem;
+}
+
+.btn-hire-me:is(:hover,:active) span{
+  margin-left: 1.5rem;
+}
+
+.btn-hire-me:is(:hover,:active){
+  /* border-bottom: 1px solid #000; */
 }
 
 .btn-project:link,
