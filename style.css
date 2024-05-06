@@ -528,6 +528,29 @@ nav ul li a {
 .feature__text {
   font-size: 1.8rem;
 }
+/* SECTION TEACHERS */
+.teachers{
+  padding:  1rem 4rem;
+display: flex;
+gap: 4rem;
+}
+
+.teacher{
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+  color: #bbb;
+}
+
+.teacher__name{
+font-size: 3rem;
+font-weight: 700;
+}
+
+.teacher__course{
+font-size: 1.6rem;
+align-self: center;
+}
 
 /* CONTACT */
 .section-contact {
