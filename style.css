@@ -549,10 +549,13 @@ nav ul li a {
 
 .empty-box--1 {
   background-color: #231f20;
+  background-color: #33302a;
+  background-color: #f7f7f7;
 }
 
 .empty-box--2 {
   background-color: #ffcb05;
+  background-color: #f7f7f7;
 }
 
 .form {
@@ -668,8 +671,19 @@ textarea::placeholder {
 .footer {
   /* height: 30rem; */
   background-color: #f7f7f7;
+  background-color: #33302a;
   color: #231f20;
+  color: #f7f7f7;
+  color: #fffcee;
+  color: #f6de6b;
   padding: 4rem 12rem;
+}
+
+.footer__line{
+  height: 5rem;
+  background-color: #302802;
+  background-color: #ffcb05;
+
 }
 
 .footer__logo-box {
@@ -692,6 +706,7 @@ textarea::placeholder {
   font-size: 1.4rem;
   font-weight: 100;
   color: #555;
+  color: #fcf4ce;
 }
 
 .footer__content {
@@ -730,6 +745,7 @@ textarea::placeholder {
   font-weight: 600;
   text-transform: uppercase;
   color: #555;
+  color: #fcf4ce;
 
   justify-self: center;
 }
@@ -751,6 +767,7 @@ textarea::placeholder {
   width: 3rem;
   height: 3rem;
   fill: #231f20;
+  fill: #f6de6b;
 }
 
 /* utilities */
