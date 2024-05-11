@@ -248,6 +248,16 @@ nav ul li a {
   margin-bottom: 6rem;
 }
 
+.heading-fouth{
+  font-family: "Playfair Display", sans-serif;
+  font-size: 2.7rem;
+  font-weight: 700;
+  color: #332901;
+  text-align: center;
+  padding-bottom: 6rem;
+  background-color: #fffcee;
+}
+
 .color-yellow-dark {
   color: #332901;
 }
@@ -532,7 +542,7 @@ nav ul li a {
 .scroller {
   max-width: 80%;
   margin: 0 auto;
-  border: 4px solid lime;
+  border: 4px solid #ffcb05;
 }
 
 .scroller[data-animated="true"] {
@@ -856,7 +866,7 @@ textarea::placeholder {
   content: "";
   width: 30%;
   position: absolute;
-  background-color: #ffcb05;
+  /* background-color: #ffcb05; */
   height: 2px;
   bottom: 3rem;
   left: 50%;
