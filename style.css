@@ -99,43 +99,62 @@ nav ul li a {
 
 /* NEW NAVIGATION BUTTON */
 .header {
-  position: relative;
+  /* position: relative; */
   padding-inline: 5rem;
 }
 
 .navigation__button {
-  width: 5rem;
-  height: 5rem;
-
-  cursor: pointer;
+  /* width: 6rem;
+  height: 6rem;
+  padding: 1rem;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   right: 5rem;
+  
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center; */
+
   transition: 0.5s all ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 5rem;
+  width: 5rem;
 }
 
-.navigation__button-open {
+.navigation__button-open,
+.navigation__button-close {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  justify-content: center;
+}
+
+.navigation__button-open > *,
+.navigation__button-close > * {
+  display: block;
+  width: 5rem;
+}
+
+.navigation__button-open {
+  /* display: none; */
+  visibility: visible;
+  pointer-events: auto;
+  opacity: 1;
 }
 
 .navigation__button-close {
-  display: none;
+  /* display: none; */
+  position: relative;
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
 }
 
-.navigation__button:hover .navigation__button-line--1 {
-  transform: translateX(25px);
-}
-.navigation__button:hover .navigation__button-line--2 {
-  transform: translateX(-4px);
-}
-.navigation__button:hover .navigation__button-line--3 {
-  transform: translateX(3px);
-}
-
+/* Style Hamburger menu lines */
 .navigation__button-line--1,
 .navigation__button-line--2,
 .navigation__button-line--3 {
@@ -152,12 +171,26 @@ nav ul li a {
   background-color: #f2ce21;
   height: 3px;
   transition: 0.5s all ease;
+  position: absolute;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%); */
 }
 
+/* Hover effect on the hamburger menu */
+.navigation__button-open:hover .navigation__button-line--1 {
+  transform: translateX(25px);
+}
+.navigation__button-open:hover .navigation__button-line--2 {
+  transform: translateX(-4px);
+}
+.navigation__button-open:hover .navigation__button-line--3 {
+  transform: translateX(3px);
+}
+
+/* Set each humburger menu line */
 .navigation__button-line--1 {
   animation: animeLine--1 ease 1.5s backwards;
-  height: 3.2px;
-  width: 100%;
 }
 
 .navigation__button-line--2 {
@@ -174,64 +207,7 @@ nav ul li a {
   display: none;
 }
 
-.navigation__checkbox:checked ~ .nav {
-  visibility: visible;
-  pointer-events: auto;
-  transform: translate(-50%, 11em);
-}
-
-.navigation__checkbox:checked ~ .navigation__button .navigation__button-close {
-  display: block;
-}
-
-.navigation__checkbox:checked ~ .navigation__button .navigation__button-open {
-  display: none;
-  animation: gap-0 ease 1s;
-}
-
-.navigation__checkbox:checked
-  ~ .navigation__button
-  .navigation__button-close
-  .navigation__button-line--4 {
-  transform: rotate(45deg);
-}
-
-.navigation__checkbox:checked
-  ~ .navigation__button
-  .navigation__button-close
-  .navigation__button-line--5 {
-  transform: rotate(135deg);
-}
-
-.navigation__checkbox:checked
-  ~ .navigation__button
-  .navigation__button-line--2 {
-  /* display: none; */
-}
-
-.navigation__checkbox:checked
-  ~ .navigation__button
-  .navigation__button-line--3 {
-  /* width: 100%;
-  transform: rotate(30deg); */
-}
-
-.navigation__checkbox:checked
-  ~ .navigation__button
-  .navigation__button-line--3 {
-  /* transform: rotate(90deg); */
-}
-
-.nav {
-  visibility: hidden;
-  pointer-events: none;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: -6rem;
-  transition: all 0.5s ease;
-}
-
+/* Keyframes to animate the hamburger menu when the page is loaded */
 @keyframes animeLine--1 {
   0% {
     transform: translateX(-30%);
@@ -260,6 +236,58 @@ nav ul li a {
   }
 }
 
+/* Bring down Navigation menu when w e checked the checkbox */
+.navigation__checkbox:checked ~ .nav {
+  visibility: visible;
+  pointer-events: auto;
+  transform: translate(-50%, 11em);
+}
+
+/* Navigation Initial state */
+.nav {
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -6rem;
+  transition: all 0.5s ease;
+}
+
+/* When checkbox is checked close button appear and open button desappear */
+.navigation__checkbox:checked ~ .navigation__button .navigation__button-open {
+  /* animation: gap-0 ease 1s; */
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.navigation__checkbox:checked ~ .navigation__button .navigation__button-close {
+  /* display: block; */
+  visibility: visible;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+/* Rotate close buttons */
+.navigation__checkbox:checked
+  ~ .navigation__button
+  .navigation__button-close
+  .navigation__button-line--4 {
+  top: 0;
+  left: -5rem;
+  transform: rotate(45deg);
+}
+
+.navigation__checkbox:checked
+  ~ .navigation__button
+  .navigation__button-close
+  .navigation__button-line--5 {
+  top: 0;
+  left: -5rem;
+  transform: rotate(135deg);
+}
+
 @keyframes gap-0 {
   30% {
     gap: 0;
@@ -268,10 +296,76 @@ nav ul li a {
 
   100% {
     background-color: green;
-    opacity: 0;
-    visibility: hidden;
+    /* opacity: 0;
+    visibility: hidden; */
+    display: none;
   }
 }
+
+/* 
+.navigation__checkbox:checked
+  ~ .navigation__button
+  .navigation__button-line--1 {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.navigation__checkbox:checked
+  ~ .navigation__button
+  .navigation__button-line--2 {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.navigation__checkbox:checked
+  ~ .navigation__button
+  .navigation__button-line--3 {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.navigation__checkbox:checked
+  ~ .navigation__button
+  .navigation__button-line--4 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.navigation__checkbox:checked
+  ~ .navigation__button
+  .navigation__button-line--5 {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+*/
+
+/* .navigation__checkbox:checked
+  ~ .navigation__button
+  .navigation__button-line--2 {
+  display: none;
+}
+
+.navigation__checkbox:checked
+  ~ .navigation__button
+  .navigation__button-line--3 {
+  width: 100%;
+  transform: rotate(30deg);
+}
+
+.navigation__checkbox:checked
+  ~ .navigation__button
+  .navigation__button-line--3 {
+  transform: rotate(90deg);
+}
+
+
+
+
+
+ */
 
 /* END NEW NAVIGATION BUTTON */
 
