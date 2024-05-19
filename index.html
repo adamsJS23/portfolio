@@ -7,9 +7,12 @@
     <meta name="description" content="Guebre Adama | Web Developer" />
     <meta
       name="keywords"
-      content="Web developer, web development, web Apps, Adama Guebre, Guebre Adama,web development, Adama, adamJS23, Front end Developer, Javascript Developer, React Developer"
+      content="Web developer portfolio, React developer Portfolio, Javascript Developer Portofolio, Front end Developer Portfolio, Web developer, web development, web Apps, Adama Guebre, Guebre Adama,web development, Adama, adamJS23, Front end Developer, Javascript Developer, React Developer"
     />
-
+    <meta property="author" content="Guebre Adama" />
+    <!-- <meta name="msapplication-TileColor" content="#00aba9"> -->
+    <meta name="application-name" content="adam.dev" />
+    <meta name="apple-mobile-web-app-title" content="adam.dev" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,33 +28,50 @@
     />
 
     <title>
-      Adam Frontend Developer |HTML CSS Javascript React MEARN stack
+      <!-- Adam Frontend Developer |HTML CSS Javascript React MEARN stack -->
+      React Developer Portfolio - Javascript JS - Web developer Portfolio
     </title>
   </head>
   <body>
+    <header class="header">
+      <img class="logo" src="logo_yellow.png" alt="Brand logo" />
+      <input
+        class="navigation__checkbox"
+        id="input__checkbox"
+        type="checkbox"
+      />
+      <label class="navigation__button" for="input__checkbox">
+        <div class="navigation__button-open">
+          <span class="navigation__button-line--1"></span>
+          <span class="navigation__button-line--2"></span>
+          <span class="navigation__button-line--3"></span>
+        </div>
+        <div class="navigation__button-close">
+          <span class="navigation__button-line--4"></span>
+          <span class="navigation__button-line--5"></span>
+        </div>
+      </label>
+      <nav class="nav">
+        <ul>
+          <li class="list-item"><a href="#">Home</a></li>
+          <li class="list-item"><a href="#section-about">about</a></li>
+          <li class="list-item"><a href="#">Skills</a></li>
+          <li class="list-item"><a href="#">Works</a></li>
+          <li class="list-item"><a href="#">contact</a></li>
+          <li><a class="resume" href="#">Resume</a></li>
+        </ul>
+      </nav>
+    </header>
     <section id="section-hero" class="section-hero wrapper">
-      <header>
-        <img class="logo" src="logo_yellow.png" alt="Brand logo" />
-        <nav>
-          <ul>
-            <li class="list-item"><a href="#">Home</a></li>
-            <li class="list-item"><a href="#section-about">about</a></li>
-            <li class="list-item"><a href="#">Skills</a></li>
-            <li class="list-item"><a href="#">Works</a></li>
-            <li class="list-item"><a href="#">contact</a></li>
-            <li><a class="resume" href="#">Resume</a></li>
-          </ul>
-        </nav>
-      </header>
       <div class="hero-content">
         <div class="left-col">
           <h1 class="">
             <span class="react">React</span> , javaScript developer
           </h1>
           <p>
-            Ciao! I'm Adam. A passionnate front end developer base
-            in Italy. 
-            Coding is my daily routine and I enjoy bringing ideas to life in a web browser.
+            Ciao! I'm Adam. A passionnate front end developer base in Italy.
+            Coding is my daily routine and I enjoy bringing ideas to life in a
+            web browser.
             <!-- I like to code things from scratch or using a framework,
             and enjoy bringing ideas to life in the browser. -->
           </p>
@@ -62,7 +82,9 @@
               </svg>
               <span>See works</span></a
             >
-            <a class="btn-hire-me" href="#">Download resume <span>&rarr;</span></a>
+            <a class="btn-hire-me" href="#"
+              >Download resume <span>&rarr;</span></a
+            >
           </div>
         </div>
         <div class="right-col">
@@ -80,8 +102,8 @@
               <p>
                 High school graduated, and After several year i decide to Git my
                 hand dirty with code again. Back in the day, i learned Turbo
-                pasal, C# and used tools like Visual Visual Basic,
-                Foxpro, Delphi, Access, and also data modelling to build desktop apps.
+                pasal, C# and used tools like Visual Visual Basic, Foxpro,
+                Delphi, Access, and also data modelling to build desktop apps.
               </p>
             </div>
             <div>
@@ -89,7 +111,7 @@
               <p>
                 I used web development tools to create dynamic and responsive
                 web applications using web technologies.
-                 <!-- I am a strong advocate
+                <!-- I am a strong advocate
                 of responsive and accessible websites. -->
               </p>
             </div>
@@ -113,13 +135,12 @@
                 After web develpement studies I spent most of free times fishing and to runing 🤸🤸‍♂️🤸‍♀️
               </p> -->
 
-
-        
               <p>
                 When not having the expected result of your code in the brower.
               </p>
               <p>
-                When don't knowing how to figure out the bug in your code after 1 hour 
+                When don't knowing how to figure out the bug in your code after
+                1 hour
               </p>
               <p>When thinking this AI thing will take your job</p>
             </div>
@@ -1011,8 +1032,11 @@
 
     <section class="section-teachers">
       <h3 class="heading-fouth">People I learn from</h3>
-      <div class="scroller" data-animation-speed=""
-      data-animation-direction="right">
+      <div
+        class="scroller"
+        data-animation-speed=""
+        data-animation-direction="right"
+      >
         <ul class="teacher__list scroller__inner">
           <li class="teacher">
             <span class="teacher__name">Jonas Schedtman</span>
