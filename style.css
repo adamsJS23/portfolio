@@ -30,7 +30,7 @@ p {
 }
 
 .section-hero {
-  height: 100vh;
+  height: 85vh;
 }
 
 .wrapper {
@@ -160,7 +160,9 @@ nav ul li a {
 .navigation__button-line--3 {
   display: block;
   background-color: #f2ce21;
-  height: 3px;
+  background-color: #231f20;
+  background-color: #e6b705;
+  height: 4px;
   transition: 0.5s all ease;
   margin-left: auto;
 }
@@ -169,7 +171,9 @@ nav ul li a {
 .navigation__button-line--5 {
   display: block;
   background-color: #f2ce21;
-  height: 3px;
+  background-color: #231f20;
+  background-color: #e6b705;
+  height: 4px;
   transition: 0.5s all ease;
   position: absolute;
   /* top: 50%;
@@ -190,17 +194,17 @@ nav ul li a {
 
 /* Set each humburger menu line */
 .navigation__button-line--1 {
-  animation: animeLine--1 ease 1.5s backwards;
+  animation: animeLine--1 ease 2s backwards;
 }
 
 .navigation__button-line--2 {
-  animation: animeLine--2 ease 1.5s backwards 0.5s;
+  animation: animeLine--2 ease 2s backwards 1s;
   width: 65%;
 }
 
 .navigation__button-line--3 {
   width: 40%;
-  animation: animeLine--2 ease 1.5s backwards 1s;
+  animation: animeLine--2 ease 2s backwards .5s;
 }
 
 .navigation__checkbox {
