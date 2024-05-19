@@ -41,6 +41,7 @@ p {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 2.4rem 0;
 }
 
@@ -95,6 +96,184 @@ nav ul li a {
   border-radius: 8px;
   margin-left: 16rem;
 }
+
+/* NEW NAVIGATION BUTTON */
+.header {
+  position: relative;
+  padding-inline: 5rem;
+}
+
+.navigation__button {
+  width: 5rem;
+  height: 5rem;
+
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5rem;
+  transition: 0.5s all ease;
+}
+
+.navigation__button-open {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
+.navigation__button-close {
+  display: none;
+}
+
+.navigation__button:hover .navigation__button-line--1 {
+  transform: translateX(25px);
+}
+.navigation__button:hover .navigation__button-line--2 {
+  transform: translateX(-4px);
+}
+.navigation__button:hover .navigation__button-line--3 {
+  transform: translateX(3px);
+}
+
+.navigation__button-line--1,
+.navigation__button-line--2,
+.navigation__button-line--3 {
+  display: block;
+  background-color: #f2ce21;
+  height: 3px;
+  transition: 0.5s all ease;
+  margin-left: auto;
+}
+
+.navigation__button-line--4,
+.navigation__button-line--5 {
+  display: block;
+  background-color: #f2ce21;
+  height: 3px;
+  transition: 0.5s all ease;
+}
+
+.navigation__button-line--1 {
+  animation: animeLine--1 ease 1.5s backwards;
+  height: 3.2px;
+  width: 100%;
+}
+
+.navigation__button-line--2 {
+  animation: animeLine--2 ease 1.5s backwards 0.5s;
+  width: 65%;
+}
+
+.navigation__button-line--3 {
+  width: 40%;
+  animation: animeLine--2 ease 1.5s backwards 1s;
+}
+
+.navigation__checkbox {
+  display: none;
+}
+
+.navigation__checkbox:checked ~ .nav {
+  visibility: visible;
+  pointer-events: auto;
+  transform: translate(-50%, 11em);
+}
+
+.navigation__checkbox:checked ~ .navigation__button .navigation__button-close {
+  display: block;
+}
+
+.navigation__checkbox:checked ~ .navigation__button .navigation__button-open {
+  display: none;
+  animation: gap-0 ease 1s;
+}
+
+.navigation__checkbox:checked
+  ~ .navigation__button
+  .navigation__button-close
+  .navigation__button-line--4 {
+  transform: rotate(45deg);
+}
+
+.navigation__checkbox:checked
+  ~ .navigation__button
+  .navigation__button-close
+  .navigation__button-line--5 {
+  transform: rotate(135deg);
+}
+
+.navigation__checkbox:checked
+  ~ .navigation__button
+  .navigation__button-line--2 {
+  /* display: none; */
+}
+
+.navigation__checkbox:checked
+  ~ .navigation__button
+  .navigation__button-line--3 {
+  /* width: 100%;
+  transform: rotate(30deg); */
+}
+
+.navigation__checkbox:checked
+  ~ .navigation__button
+  .navigation__button-line--3 {
+  /* transform: rotate(90deg); */
+}
+
+.nav {
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -6rem;
+  transition: all 0.5s ease;
+}
+
+@keyframes animeLine--1 {
+  0% {
+    transform: translateX(-30%);
+  }
+
+  50% {
+    transform: translateX(50%);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes animeLine--2 {
+  0% {
+    transform: translateX(-60%);
+  }
+
+  50% {
+    transform: translateX(80%);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes gap-0 {
+  30% {
+    gap: 0;
+    background-color: red;
+  }
+
+  100% {
+    background-color: green;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* END NEW NAVIGATION BUTTON */
 
 .hero-content {
   margin-top: 4.8rem;
