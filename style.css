@@ -509,6 +509,18 @@ nav ul li a {
   background-color: #fffcee;
   color: #332901;
   padding: 8rem 9.6rem;
+  background-color: #332901;
+  background-color: #cca204;
+  background-color: #e6b705;
+  color: #fffcee;
+  color:#191400;
+  color:#332901;
+}
+
+.section-about .heading-secondary{
+  color: #fffcee;
+  color:#191400;
+  color:#332901;
 }
 
 .about-wrapper {
@@ -623,12 +635,14 @@ nav ul li a {
 
 .features__icons {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, min-content));
+  grid-template-columns: repeat(auto-fit, minmax(12rem, min-content));
+  grid-template-columns: repeat(3, 12rem) repeat(4,16rem) repeat(3,12rem);
+  /* grid-template-columns: repeat(auto-fit, minmax(min-content, 10rem)); */
   grid-column-gap: 0.5rem;
   width: 85rem;
   margin: 0 auto;
   justify-content: center;
-  /* margin-bottom: 8rem; */
+  margin-bottom: 8rem;
 }
 
 .features__icons:nth-child(4) {
@@ -639,11 +653,22 @@ nav ul li a {
   height: 10rem;
   width: 10rem;
   border: solid 2px #f7f7f7;
+  background-color: #f7f7f7;
   border-radius: 1rem;
   box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.scale-20x{
+  transform: scale(1.6);
+}
+
+
+
+.scale-12x{
+  transform: scale(1.1);
 }
 
 .dev-icon {
@@ -654,6 +679,7 @@ nav ul li a {
 /* *****SECTION PROJECT********* */
 .section-projects {
   background-color: #fffcee;
+  background-color: #e6b705;
   padding: 10rem 9.6rem;
 }
 
@@ -750,18 +776,19 @@ nav ul li a {
 /* **************************** */
 
 .section-features {
-  padding: 15rem 0;
+  padding: 9rem 0;
   margin: 0 auto;
-  max-width: 120rem;
+  width: 90%;
   /* background-color: #fff;
   background-color: #f8f8f8; */
+  background-color: #f1f1f1;
 }
 
 .features {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(35rem, min-content));
-  grid-column-gap: 6rem;
-  grid-row-gap: 6rem;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, min-content));
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
   justify-content: center;
 }
 
@@ -784,12 +811,15 @@ nav ul li a {
 
 .feature__icon-box--quick {
   background-color: #f8d2d1;
+  background-color: #fcf4ce;
 }
 .feature__icon-box--detail {
   background-color: #e9e1f4;
+  background-color: #fcf4ce;
 }
 .feature__icon-box--solving {
   background-color: #cdeff7;
+  background-color: #fcf4ce;
 }
 .feature__icon-box--team {
   background-color: #fcf4ce;
@@ -801,27 +831,29 @@ nav ul li a {
 }
 
 .feature__icon--quick {
-  fill: #2c0605;
-  fill: #e03331;
+  
+  fill: #f2ce21;
+  fill: #e6b705;
 }
 .feature__icon--detail {
-  fill: #9b76cc;
+  fill: #e6b705;
 }
 .feature__icon--solving {
-  fill: #217694;
+  fill: #e6b705;
 }
 .feature__icon--team {
-  fill: #f2ce21;
+  fill: #e6b705;
 }
 
 .feature__title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 500;
   margin-bottom: 2rem;
 }
 
 .feature__text {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+  /* align-self: end; */
 }
 /* SECTION TEACHERS */
 
