@@ -204,7 +204,7 @@ nav ul li a {
 
 .navigation__button-line--3 {
   width: 40%;
-  animation: animeLine--2 ease 2s backwards .5s;
+  animation: animeLine--2 ease 2s backwards 0.5s;
 }
 
 .navigation__checkbox {
@@ -517,14 +517,14 @@ nav ul li a {
   background-color: #cca204;
   background-color: #e6b705;
   color: #fffcee;
-  color:#191400;
-  color:#332901;
+  color: #191400;
+  color: #332901;
 }
 
-.section-about .heading-secondary{
+.section-about .heading-secondary {
   color: #fffcee;
-  color:#191400;
-  color:#332901;
+  color: #191400;
+  color: #332901;
 }
 
 .about-wrapper {
@@ -637,7 +637,7 @@ nav ul li a {
 
 /* PROJECTS */
 
-.skills{
+.skills {
   margin-bottom: 8rem;
   display: flex;
   justify-content: center;
@@ -645,28 +645,29 @@ nav ul li a {
   gap: 0.5rem;
 }
 
-.skill__group--1,.skill__group--3,.skill__group--2{
+.skill__group--1,
+.skill__group--3,
+.skill__group--2 {
   display: flex;
   /* grid-template-columns: repeat(3, 12rem); */
   gap: 0.5rem;
 }
 
-.skill__group--1{
+.skill__group--1 {
   /* justify-self: flex-end; */
 }
 
-.skill__group--3{
+.skill__group--3 {
   /* justify-self: flex-start; */
 }
 
-.skill__group--2{
+.skill__group--2 {
   /* display: grid;
   grid-template-columns: repeat(4,16rem) ; */
   /* grid-column-gap: 0.5rem; */
 }
 
 .features__icons {
- 
 }
 
 .features__icons:nth-child(4) {
@@ -684,30 +685,33 @@ nav ul li a {
   align-items: center;
   justify-content: center;
   align-self: center;
+  cursor: pointer;
+  transition: all .5s ease;
 }
 
-.scale-20x{
+.feature__icon-container:is(:hover) {
+  transform: scale(1.2);
+}
+
+.scale-20x {
   width: 16rem;
   height: 16rem;
 }
 
-.scale-15x{
+.scale-15x {
   width: 13rem;
   height: 13rem;
 }
-
-
 
 .dev-icon {
   width: 5rem;
   height: 5rem;
 }
 
-.scale-devicon{
+.scale-devicon {
   width: 10rem;
   height: 10rem;
 }
-
 
 /* *****SECTION PROJECT********* */
 .section-projects {
@@ -810,13 +814,13 @@ nav ul li a {
 
 .section-features {
   padding: 9rem 0;
-  
+
   /* background-color: #fff;
   background-color: #f8f8f8; */
   background-color: #f1f1f1;
 }
 
-.container{
+.container {
   margin: 0 auto;
   width: 90%;
 }
@@ -868,7 +872,6 @@ nav ul li a {
 }
 
 .feature__icon--quick {
-  
   fill: #f2ce21;
   fill: #e6b705;
 }
