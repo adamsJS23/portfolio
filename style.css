@@ -686,7 +686,7 @@ nav ul li a {
   justify-content: center;
   align-self: center;
   cursor: pointer;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .feature__icon-container:is(:hover) {
@@ -741,10 +741,57 @@ nav ul li a {
   cursor: pointer;
 
   position: relative;
+  overflow: hidden;
+}
+
+.fresh,
+.freelance,
+.valuable {
+  position: absolute;
+  display: inline-block;
+  padding: 5px 7rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+
+  transform: rotate(45deg) translate(21rem, -15rem);
+}
+
+.valuable {
+  background-color: #ffc70e;
+  transform: rotate(45deg) translate(20rem, -16rem);
+}
+
+.freelance {
+  background-color: #48a359;
+  transform: rotate(45deg) translate(19.5rem, -13rem);
+}
+
+.fresh {
+  background-color: #1d79ff;
+}
+
+.project--1 {
+  background-image: url("project-1.png");
+  background-size: cover;
+  background-position: center;
+  transition: all ease 0.5s;
+}
+
+.project--1:hover {
+  background-image: url("project-2.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.project:hover .project::after {
+  opacity: 0;
 }
 
 .project:hover {
-  transform: translateY(-10px);
+  /* transform: translateY(-10px); */
 }
 
 .project:hover .project__img {
@@ -752,7 +799,10 @@ nav ul li a {
 }
 
 .project:hover .project__content {
-  transform: translateY(0);
+  /* transform: translateY(0); */
+  /* transform: scale(1); */
+  animation: frontback ease 0.5s;
+  transform: scale(1);
 }
 
 .project__img {
@@ -774,7 +824,8 @@ nav ul li a {
   left: 0;
   bottom: 0;
 
-  transform: translateY(100%);
+  /* transform: translateY(100%); */
+  transform: scale(0);
   transition: transform ease 0.3s;
 }
 
@@ -791,6 +842,13 @@ nav ul li a {
   gap: 0.5rem;
   font-size: 2rem;
   font-weight: 500;
+}
+
+.project__content-tech-list span {
+  display: inline-block;
+  border: 2px solid #191400;
+  padding: 2px 4px;
+  border-radius: 3px;
 }
 
 .project__logo {
@@ -1255,5 +1313,23 @@ textarea::placeholder {
 
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes frontback {
+  10% {
+    transform: scale(0.3);
+  }
+
+  50% {
+    transform: scale(0.8);
+  }
+
+  80% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
   }
 }
