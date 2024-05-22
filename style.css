@@ -1118,12 +1118,13 @@ nav ul li a {
 }
 
 .ipt {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   padding: 1rem 0 1rem 0.5rem;
   outline: none;
   border: none;
   border-bottom: 2px solid #ffcb05;
-  color: black;
+  color: #231f20;
+  font-family: 'Inter', sans-serif;
 }
 
 textarea {
