@@ -18,6 +18,7 @@ html {
 body {
   font-family: "Inter", sans-serif;
   color: #231f20;
+  background-color: #f1f1f1;
 }
 
 img {
@@ -729,8 +730,6 @@ nav ul li a {
   grid-column-gap: 4rem;
   grid-row-gap: 4rem;
   color: #332901;
-
-  margin-bottom: 12rem;
 }
 
 .project {
@@ -739,7 +738,7 @@ nav ul li a {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
   transition: transform ease 0.3s 0.3s;
   cursor: pointer;
-
+  height: 32rem;
   position: relative;
   overflow: hidden;
 }
@@ -761,23 +760,27 @@ nav ul li a {
 
 .valuable {
   background-color: #ffc70e;
+  /* background-color: #332901; */
   transform: rotate(45deg) translate(20rem, -16rem);
 }
 
 .freelance {
   background-color: #48a359;
+  background-color: #332901;
   transform: rotate(45deg) translate(19.5rem, -13rem);
 }
 
 .fresh {
   background-color: #1d79ff;
+  background-color: #332901;
 }
 
 .project--1 {
+  /* height: auto; */
   background-image: url("project-1.png");
   background-size: cover;
   background-position: center;
-  transition: all ease 0.5s;
+  transition: all ease 0.5s 0.3s;
 }
 
 .project--1:hover {
@@ -785,22 +788,68 @@ nav ul li a {
   background-size: cover;
   background-position: center;
 }
-
-.project:hover .project::after {
-  opacity: 0;
+.project--2 {
+  background-image: url("project-3.png");
+  background-size: cover;
+  background-position: center;
+  transition: all ease 0.5s 0.3s;
 }
 
-.project:hover {
-  /* transform: translateY(-10px); */
+.project--2:hover {
+  background-image: url("project-13.png");
+  background-size: cover;
+  background-position: center;
+}
+.project--3 {
+  background-image: url("project-4.png");
+  background-size: cover;
+  background-position: center;
+  transition: all ease 0.5s 0.3s;
 }
 
-.project:hover .project__img {
-  /* transform: scale(1.08); */
+.project--3:hover {
+  background-image: url("project-6.png");
+  background-size: cover;
+  background-position: center;
+}
+.project--4 {
+  background-image: url("project-5.png");
+  background-size: cover;
+  background-position: center;
+  transition: all ease 0.5s 0.3s;
+}
+
+.project--4:hover {
+  background-image: url("project-1.png");
+  background-size: cover;
+  background-position: center;
+}
+.project--5 {
+  background-image: url("project-6.png");
+  background-size: cover;
+  background-position: center;
+  transition: all ease 0.5s 0.3s;
+}
+
+.project--5:hover {
+  background-image: url("project-14.png");
+  background-size: cover;
+  background-position: center;
+}
+.project--6 {
+  background-image: url("project-14.png");
+  background-size: cover;
+  background-position: center;
+  transition: all ease 0.5s 0.3s;
+}
+
+.project--6:hover {
+  background-image: url("project-15.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .project:hover .project__content {
-  /* transform: translateY(0); */
-  /* transform: scale(1); */
   animation: frontback ease 0.5s;
   transform: scale(1);
 }
@@ -1124,7 +1173,7 @@ nav ul li a {
   border: none;
   border-bottom: 2px solid #ffcb05;
   color: #231f20;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 textarea {
