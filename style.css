@@ -4,6 +4,11 @@
 
 /* TINT AND SHADE GENERATOR
 231f20 ffcb05 086788 06aed5 fff1d0 dd1c1a f0c808 9067c6 f7f7f7 */
+::selection{
+  color:#fff;
+  background-color: #e6b705;
+}
+
 * {
   margin: 0;
   padding: 0;
