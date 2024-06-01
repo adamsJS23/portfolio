@@ -18,6 +18,11 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  scroll-padding-top: 3rem;
+}
+
+section:target  h2{
+  font-size: 10rem;
 }
 
 body {
