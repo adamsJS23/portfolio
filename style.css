@@ -525,20 +525,26 @@ nav ul li a {
   height: 70%;
 }
 
+.right-col {
+  position: relative;
+  /* height: 70vh; */
+  z-index: 99;
+  padding: 1rem 1rem 12rem;
+  background-color: #fffae6;
+  border-radius: 1rem;
+}
+
 .collage {
-  height: 70vh;
   display: grid;
   grid-gap: 1rem;
-  border-radius: 1rem;
-  overflow: hidden;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(10rem, 1fr);
   grid-template-areas:
     "second main main ."
     "second main main ."
     " . third third third";
-    padding: 2rem;
-    background-color: #fffae6;
+
+  margin-bottom: 1rem;
 }
 
 .collage img {
@@ -569,6 +575,32 @@ nav ul li a {
 }
 .collage img:nth-child(4) {
   grid-area: third;
+}
+
+.thumbnail {
+  position: absolute;
+  bottom: 32px;
+  left: -10px;
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  width: 105%;
+  background-color: #fffae6;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+}
+
+.thumbnail__img {
+  width: 9rem;
+  height: 5rem;
+  /* flex: 1; */
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.thumbnail__img:nth-child(3) {
+ transform: translateY(-20px);
+ background-color: #fefb32;
+ padding: .4rem;
+ border-radius: 1rem;
 }
 
 /* about me */
