@@ -33,7 +33,7 @@
     </title>
   </head>
   <body>
-    <header class="header">
+    <header id="header" class="header">
       <img class="logo" src="logo_yellow.png" alt="Brand logo" />
       <input
         class="navigation__checkbox"
@@ -53,17 +53,66 @@
         </div>
       </label>
       <nav class="nav">
+        <!-- <div class="navigation__button-close">
+          <span class="navigation__button-line--4">&nbsp;</span>
+          <span class="navigation__button-line--5">&nbsp;</span>
+        </div> -->
         <ul>
-          <li class="list-item"><a href="#">Home</a></li>
           <!-- Who I am -->
-          <li class="list-item"><a href="#section-about">about</a></li>
           <!-- Language I speak -->
-          <li class="list-item"><a href="#">Skills</a></li>
+          <li class="list-item">
+            <a href="#header"
+              ><svg class="btn-icon btn-icon--send">
+                <use xlink:href="sprite.svg#icon-home"></use>
+              </svg>
+              <span>Home</span>
+            </a>
+          </li>
           <!-- What I do -->
-          <li class="list-item"><a href="#">Works</a></li>
+          <li class="list-item">
+            <a href="#section-about"
+              ><svg class="btn-icon btn-icon--send">
+                <use xlink:href="sprite.svg#icon-user"></use>
+              </svg>
+              <span>About</span>
+            </a>
+          </li>
           <!-- Say hello -->
-          <li class="list-item"><a href="#">contact</a></li>
-          <li><a class="resume" href="#">Resume</a></li>
+          <li class="list-item">
+            <a href="#section-features"
+              ><svg class="btn-icon btn-icon--send">
+                <use xlink:href="sprite.svg#icon-tools"></use>
+              </svg>
+              <span>Skills</span>
+            </a>
+          </li>
+
+          <li class="list-item">
+            <a href="#section-projects"
+              ><svg class="btn-icon btn-icon--send">
+                <use xlink:href="sprite.svg#icon-briefcase"></use>
+              </svg>
+              <span>Work</span>
+            </a>
+          </li>
+
+          <li class="list-item">
+            <a href="#section-contact"
+              ><svg class="btn-icon btn-icon--send">
+                <use xlink:href="sprite.svg#icon-mail"></use>
+              </svg>
+              <span>Contact</span>
+            </a>
+          </li>
+
+          <li class="list-item list-item--resume">
+            <a href="#" class="resume"
+              ><svg class="btn-icon btn-icon--send">
+                <use xlink:href="sprite.svg#icon-text-document-inverted"></use>
+              </svg>
+              <span>Resume</span>
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -158,11 +207,15 @@
       </div>
     </section>
     <section id="section-about" class="section-about">
-      <h2 class="heading-secondary u-margin-bottom-medium">About me</h2>
+      <h2 class="heading-secondary u-margin-bottom-small">About me</h2>
       <div class="about-wrapper">
         <div class="about">
           <div class="gallery">
-            <img class="about-img" src="photo-2.avif" alt=" Adam picture during work session" />
+            <img
+              class="about-img"
+              src="photo-2.avif"
+              alt=" Adam picture during work session"
+            />
           </div>
           <div class="about-content">
             <div>
@@ -203,7 +256,7 @@
       </div>
     </section>
 
-    <section class="section-features">
+    <section id="section-features" class="section-features">
       <div class="container">
         <!-- FOR ICONS I USED GO TO devicon.dev -->
         <h2 class="heading-secondary">Skills</h2>
@@ -578,7 +631,7 @@
       </div>
     </section>
 
-    <section class="section-projects">
+    <section id="section-projects" class="section-projects">
       <h2 class="heading-secondary color-yellow-dark">My Works</h2>
       <ul class="tags">
         <li class="tag">React</li>
@@ -649,8 +702,8 @@
               <p class="project__date">July 2023</p>
             </div>
             <p class="project__content-tech-list">
-              <span>Sass</span><span>Git</span
-              ><span>React</span><span>Google Analitycs</span>
+              <span>Sass</span><span>Git</span><span>React</span
+              ><span>Google Analitycs</span>
             </p>
           </div>
         </figure>
@@ -777,7 +830,7 @@
       </div>
     </section>
 
-    <section class="section-contact">
+    <section id="section-contact" class="section-contact">
       <div class="empty-box--1"></div>
       <div class="empty-box--2"></div>
       <div class="form">
