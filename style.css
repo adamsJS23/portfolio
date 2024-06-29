@@ -61,18 +61,23 @@ header {
 }
 
 nav {
-  display: flex;
-  align-items: center;
+  width: 25rem;
+  background-color: #191400;
+  color: #fff;
+  z-index: 999;
+  padding: 15rem 3rem 5rem;
+  height: 100vh;
 }
 
 nav ul {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 2.4rem;
   list-style: none;
   font-size: 1.6rem;
   font-weight: 500;
+  height: 100%;
 }
 
 nav ul li {
@@ -80,24 +85,30 @@ nav ul li {
   position: relative;
 }
 
+.list-item a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .list-item::after {
-  position: absolute;
+  /* position: absolute;
   content: "";
   width: 0;
   bottom: -8px;
   left: 0;
   transition: width ease 0.5s;
-  border: 2px solid white;
+  border: 2px solid white; */
 }
 
 .list-item:hover::after {
-  border: 2px solid #ffcb05;
-  width: 100%;
+  /* border: 2px solid #ffcb05;
+  width: 100%; */
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #231f20;
+  color: #fff;
 }
 
 .resume {
@@ -105,7 +116,14 @@ nav ul li a {
   color: #231f20;
   padding: 0.8rem 1.6rem;
   border-radius: 8px;
-  margin-left: 16rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.list-item--resume {
+  align-self: stretch;
+  margin-top: auto;
 }
 
 /* NEW NAVIGATION BUTTON */
@@ -115,18 +133,6 @@ nav ul li a {
 }
 
 .navigation__button {
-  /* width: 6rem;
-  height: 6rem;
-  padding: 1rem;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 5rem;
-  
-  flex-direction: column;
-  gap: 10px;
-  justify-content: center; */
-
   transition: 0.5s all ease;
   cursor: pointer;
   display: flex;
@@ -180,6 +186,7 @@ nav ul li a {
 
 .navigation__button-line--4,
 .navigation__button-line--5 {
+  z-index: 9999;
   display: block;
   background-color: #f2ce21;
   background-color: #231f20;
@@ -255,17 +262,17 @@ nav ul li a {
 .navigation__checkbox:checked ~ .nav {
   visibility: visible;
   pointer-events: auto;
-  transform: translate(-50%, 11em);
+  transform: translateX(0);
 }
 
 /* Navigation Initial state */
 .nav {
-  visibility: hidden;
+  transform: translateX(100%);
+  /* visibility: hidden; */
   pointer-events: none;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: -6rem;
+  position: fixed;
+  right: 0;
+  top: 0;
   transition: all 0.5s ease;
 }
 
@@ -317,71 +324,6 @@ nav ul li a {
   }
 }
 
-/* 
-.navigation__checkbox:checked
-  ~ .navigation__button
-  .navigation__button-line--1 {
-  visibility: hidden;
-  opacity: 0;
-}
-
-.navigation__checkbox:checked
-  ~ .navigation__button
-  .navigation__button-line--2 {
-  visibility: hidden;
-  opacity: 0;
-}
-
-.navigation__checkbox:checked
-  ~ .navigation__button
-  .navigation__button-line--3 {
-  visibility: hidden;
-  opacity: 0;
-}
-
-.navigation__checkbox:checked
-  ~ .navigation__button
-  .navigation__button-line--4 {
-  visibility: visible;
-  opacity: 1;
-}
-
-.navigation__checkbox:checked
-  ~ .navigation__button
-  .navigation__button-line--5 {
-  visibility: visible;
-  opacity: 1;
-}
-
-
-
-*/
-
-/* .navigation__checkbox:checked
-  ~ .navigation__button
-  .navigation__button-line--2 {
-  display: none;
-}
-
-.navigation__checkbox:checked
-  ~ .navigation__button
-  .navigation__button-line--3 {
-  width: 100%;
-  transform: rotate(30deg);
-}
-
-.navigation__checkbox:checked
-  ~ .navigation__button
-  .navigation__button-line--3 {
-  transform: rotate(90deg);
-}
-
-
-
-
-
- */
-
 /* END NEW NAVIGATION BUTTON */
 
 .hero-content {
@@ -394,16 +336,6 @@ nav ul li a {
   padding: 0 2.4rem 2.4rem 0;
   position: relative;
 }
-
-/* .left-col::before {
-  content: "";
-  height: 62%;
-  border-left: 4px solid #fffcee;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateY(2.4rem);
-} */
 
 .left-col h1 {
   font-family: "Playfair Display", sans-serif;
@@ -512,12 +444,12 @@ nav ul li a {
   background-color: #231f20;
   padding: 1rem 2.5rem;
   border-radius: 100vmax;
-  box-shadow: 0 .4rem 1rem rgba(0, 0, 0, .3);
-  transition: ease all .3s;
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.3);
+  transition: ease all 0.3s;
 }
 
 .btn-all-project:hover {
-  box-shadow: 0 .4rem 1rem rgba(0, 0, 0, .02);
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.02);
 }
 
 .btn-project:link,
@@ -684,7 +616,7 @@ nav ul li a {
   grid-gap: 4rem;
 }
 
-.about-img{
+.about-img {
   border-radius: 1rem;
 }
 
