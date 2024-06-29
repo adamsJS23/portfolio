@@ -530,7 +530,7 @@ nav ul li a {
   /* height: 70vh; */
   z-index: 99;
   padding: 1rem 1rem 12rem;
-  background-color: #fffae6;
+  /* background-color: #fffae6; */
   border-radius: 1rem;
 }
 
@@ -586,6 +586,7 @@ nav ul li a {
   padding: 1.5rem;
   width: 105%;
   background-color: #fffae6;
+  background-color: #f1f1f1;
   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
 }
 
@@ -598,7 +599,7 @@ nav ul li a {
 }
 .thumbnail__img:nth-child(3) {
  transform: translateY(-20px);
- background-color: #fefb32;
+ background-color: #ffcb05;
  padding: .4rem;
  border-radius: 1rem;
 }
