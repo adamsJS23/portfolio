@@ -506,8 +506,18 @@ nav ul li a {
 
 .btn-all-project {
   text-decoration: none;
-  font-size: 1.8rem;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #231f20;
+  padding: 1rem 2.5rem;
+  border-radius: 100vmax;
+  box-shadow: 0 .4rem 1rem rgba(0, 0, 0, .3);
+  transition: ease all .3s;
+}
+
+.btn-all-project:hover {
+  box-shadow: 0 .4rem 1rem rgba(0, 0, 0, .02);
 }
 
 .btn-project:link,
