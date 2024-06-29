@@ -451,7 +451,7 @@ nav ul li a {
   padding: 1.5rem 2rem;
   border-radius: 8px;
   transition: all ease 0.3s;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 10px;
   overflow: hidden;
@@ -507,7 +507,7 @@ nav ul li a {
 .btn-all-project {
   text-decoration: none;
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .btn-project:link,
@@ -587,7 +587,7 @@ nav ul li a {
   width: 105%;
   background-color: #fffae6;
   background-color: #f1f1f1;
-  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 .thumbnail__img {
@@ -598,10 +598,10 @@ nav ul li a {
   border-radius: 1rem;
 }
 .thumbnail__img:nth-child(3) {
- transform: translateY(-20px);
- background-color: #ffcb05;
- padding: .4rem;
- border-radius: 1rem;
+  transform: translateY(-20px);
+  background-color: #ffcb05;
+  padding: 0.4rem;
+  border-radius: 1rem;
 }
 
 /* about me */
@@ -629,7 +629,7 @@ nav ul li a {
 
 .heading-secondary {
   font-family: "Playfair Display", sans-serif;
-  font-size: 4.7rem;
+  font-size: 6rem;
   font-weight: 700;
   color: #231f20;
   text-align: center;
@@ -669,9 +669,13 @@ nav ul li a {
   padding: 2.4rem 2.4rem 2.4rem 0;
   /* flex: 0 0 60rem; */
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr)); */
   grid-gap: 4rem;
+}
+
+.about-img{
+  border-radius: 1rem;
 }
 
 .about-content {
@@ -681,15 +685,26 @@ nav ul li a {
 }
 .about h3 {
   font-family: "Playfair Display", sans-serif;
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 500;
-  margin-bottom: 2.2rem;
+  margin-bottom: -1rem;
 }
 
 .about p {
+  font-weight: 500;
   margin-top: 1.6rem;
   font-size: 1.8rem;
-  margin-bottom: 3.2rem;
+  margin-bottom: 2.8rem;
+}
+
+.btn-about:link,
+.btn-about:visited {
+  font-weight: 500;
+  font-size: 1.8rem;
+  text-decoration: none;
+  justify-content: center;
+  color: #fff;
+  background-color: #231f20;
 }
 
 .gallery {
