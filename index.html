@@ -787,7 +787,7 @@
       </div>
     </section>
 
-    <section class="section-teachers">
+    <!-- <section class="section-teachers">
       <h3 class="heading-fouth">People I learn from</h3>
       <div
         class="scroller-2"
@@ -845,103 +845,107 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
 
     <section id="section-contact" class="section-contact">
-      <div class="empty-box--1"></div>
-      <div class="empty-box--2"></div>
-      <div class="form">
-        <div class="contact-info">
-          <p>Contact Info</p>
-          <div>
-            <svg class="contact__icon feature__icon--solving">
-              <use xlink:href="sprite.svg#icon-location-pin"></use></svg
-            ><span class="contact__address">MagnoliaStraat 78 Utrech</span>
-          </div>
-          <div>
-            <svg class="contact__icon feature__icon--solving">
-              <use xlink:href="sprite.svg#icon-mail"></use>
-            </svg>
-            <a class="contact__email" href="mailto:adamaguebre@yahoo.fr"
-              >adamaguebre@yahoo.fr</a
-            >
-          </div>
+      <!-- <div class="empty-box--1"></div>
+      <div class="empty-box--2"></div> -->
+      <h2 class="heading-secondary color-yellow-dark">Contact</h2>
 
-          <div>
-            <svg class="contact__icon feature__icon--quick">
-              <use xlink:href="sprite.svg#icon-mobile"></use>
-            </svg>
-            <a class="contact__phone" href="tel:+31 7878889999"
-              >+31 7878889999</a
-            >
-          </div>
+      
+        <div class="form">
+          <img src="photo-10.avif" alt="">
+          <!-- <div class="contact-info">
+            <p>Contact Info</p>
+            <div>
+              <svg class="contact__icon feature__icon--solving">
+                <use xlink:href="sprite.svg#icon-location-pin"></use></svg
+              ><span class="contact__address">MagnoliaStraat 78 Utrech</span>
+            </div>
+            <div>
+              <svg class="contact__icon feature__icon--solving">
+                <use xlink:href="sprite.svg#icon-mail"></use>
+              </svg>
+              <a class="contact__email" href="mailto:adamaguebre@yahoo.fr"
+                >adamaguebre@yahoo.fr</a
+              >
+            </div>
+            <div>
+              <svg class="contact__icon feature__icon--quick">
+                <use xlink:href="sprite.svg#icon-mobile"></use>
+              </svg>
+              <a class="contact__phone" href="tel:+31 7878889999"
+                >+31 7878889999</a
+              >
+            </div>
+          </div> -->
+          <form class="contact-form">
+            <p class="contact-form__title">Send a message</p>
+            <div class="form__group">
+              <div class="contact-box">
+                <label for="first-name">First name*</label>
+                <input
+                  class="ipt ipt--first-name"
+                  type="text"
+                  id="first-name"
+                  placeholder="Jane"
+                  required
+                />
+              </div>
+              <div class="contact-box">
+                <label for="last-name">Last name*</label>
+                <input
+                  class="ipt ipt--last-name"
+                  type="text"
+                  id="last-name"
+                  placeholder="Doe"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form__group">
+              <div class="contact-box">
+                <label for="email">Email*</label>
+                <input
+                  class="ipt ipt--first-name"
+                  type="email"
+                  id="first-name"
+                  placeholder="janedoe@gmail.com"
+                  required
+                />
+              </div>
+              <div class="contact-box">
+                <label for="phone">Phone</label>
+                <input
+                  class="ipt ipt--last-name"
+                  type="number"
+                  id="phone"
+                  placeholder="Phone number"
+                  required
+                />
+              </div>
+            </div>
+            <div class="contact-box">
+              <label for="message">Message*</label>
+              <textarea
+                class="ipt ipt--message"
+                type="textarea"
+                rows="5"
+                id="message"
+                placeholder="You Have a really nice and clean portfolio and, and real world project. Good job!
+                "
+                required
+              ></textarea>
+            </div>
+            <button class="btn btn-form">
+              <svg class="btn-icon btn-icon--send">
+                <use xlink:href="sprite.svg#icon-paper-plane"></use>
+              </svg>
+              <span>Get in Touch</span>
+            </button>
+          </form>
         </div>
-        <form class="contact-form">
-          <p class="contact-form__title">Send a message</p>
-          <div class="form__group">
-            <div class="contact-box">
-              <label for="first-name">First name*</label>
-              <input
-                class="ipt ipt--first-name"
-                type="text"
-                id="first-name"
-                placeholder="Jane"
-                required
-              />
-            </div>
-            <div class="contact-box">
-              <label for="last-name">Last name*</label>
-              <input
-                class="ipt ipt--last-name"
-                type="text"
-                id="last-name"
-                placeholder="Doe"
-                required
-              />
-            </div>
-          </div>
-          <div class="form__group">
-            <div class="contact-box">
-              <label for="email">Email*</label>
-              <input
-                class="ipt ipt--first-name"
-                type="email"
-                id="first-name"
-                placeholder="janedoe@gmail.com"
-                required
-              />
-            </div>
-            <div class="contact-box">
-              <label for="phone">Phone</label>
-              <input
-                class="ipt ipt--last-name"
-                type="number"
-                id="phone"
-                placeholder="Phone number"
-                required
-              />
-            </div>
-          </div>
-          <div class="contact-box">
-            <label for="message">Message*</label>
-            <textarea
-              class="ipt ipt--message"
-              type="textarea"
-              rows="5"
-              id="message"
-              placeholder="You Have a really nice and clean portfolio and, and real world project. Good job!
-              "
-              required
-            ></textarea>
-          </div>
-          <button class="btn btn-form">
-            <svg class="btn-icon btn-icon--send">
-              <use xlink:href="sprite.svg#icon-paper-plane"></use>
-            </svg>
-            <span>Get in Touch</span>
-          </button>
-        </form>
-      </div>
+      
     </section>
 
     <div class="footer__line">&nbsp;</div>
