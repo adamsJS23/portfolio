@@ -18,7 +18,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  scroll-padding-top: 3rem;
+  /* scroll-padding-top: 3rem; */
 }
 
 section:target h2 {
@@ -1335,51 +1335,74 @@ nav ul li a {
   /* height: 100vh; */
   /* color: white; */
   /* padding: 10rem; */
-  display: flex;
-  position: relative;
+  /* display: flex;
+  position: relative; */
+  background-color: #0f151f;
+  color: #fff;
 }
 
-.empty-box--1,
+.section-contact h2{
+  color: #fff;
+}
+
+
+/* .empty-box--1,
 .empty-box--2 {
   width: 50%;
   min-height: 60rem;
-}
+} */
 
-.empty-box--1 {
+/* .empty-box--1 {
   background-color: #231f20;
   background-color: #33302a;
   background-color: #f7f7f7;
-}
+} */
 
-.empty-box--2 {
+/* .empty-box--2 {
   background-color: #ffcb05;
   background-color: #f7f7f7;
-}
+} */
 
 .form {
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
+  transform: translate(-50%, -50%); */
+  /* background-color: white;
   width: 70%;
   min-height: 50rem;
   padding-left: 40rem;
-  padding: 4rem 8rem 4rem 35rem;
+  padding: 4rem 8rem 4rem 35rem; */
+  display: flex;
+  width: 120rem;
+  margin: 0 auto 8rem;
+  border-radius: 1rem;
+  border: 3px solid #fff;
+  overflow: hidden;
 }
 
-.contact-info {
+.form img{
+  width: 50%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+form{
+  flex: 2;
+  padding: 0 4rem;
+}
+
+/* .contact-info {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-150%, -50%);
   width: 40%;
-  /* height: 40rem; */
   background-color: #ffcb05;
   color: black;
   font-size: 1.6rem;
   padding: 6rem 4rem;
-}
+} */
 
 .contact-info p {
   font-size: 2rem;
@@ -1431,8 +1454,12 @@ nav ul li a {
   outline: none;
   border: none;
   border-bottom: 2px solid #ffcb05;
-  color: #231f20;
+  color: #fff;
   font-family: "Inter", sans-serif;
+  /* --clr-primary-400: #344256;
+  --clr-primary-800: #1d283a; */
+  background-color:#344256 ;
+  background-color:#1d283a ;
 }
 
 textarea {
@@ -1450,6 +1477,7 @@ input::placeholder,
 textarea::placeholder {
   /* color: #ffcb05; */
   font-size: 1.4rem;
+  color: #dedede;
 }
 
 /* input[placeholder$="name"]
