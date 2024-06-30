@@ -102,6 +102,10 @@ nav ul li {
   gap: 1rem;
 }
 
+.list-item .active{
+ color: #cca204;
+}
+
 .list-item::after {
   /* position: absolute;
   content: "";
