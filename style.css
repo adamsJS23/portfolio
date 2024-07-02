@@ -752,7 +752,7 @@ nav ul li a {
 
 .heading-secondary {
   font-family: "Playfair Display", sans-serif;
-  font-size: 6rem;
+  font-size: 6.8rem;
   font-weight: 700;
   color: #231f20;
   text-align: center;
@@ -1455,8 +1455,6 @@ form {
   flex-direction: column;
 }
 
-
-
 .ipt {
   font-size: 1.7rem;
   padding: 1rem 0 1rem 0.5rem;
@@ -1518,6 +1516,11 @@ textarea::placeholder {
   color: #fffcee;
   color: #f6de6b;
   padding: 4rem 12rem;
+  background-color: #191400;
+  color: #fff;
+  background-color: #fff;
+  background-color: #f7f7f7;
+  color: #0f151f;
 }
 
 .footer__line {
@@ -1542,11 +1545,20 @@ textarea::placeholder {
   font-weight: 600;
 }
 
+.footer__thanks {
+  font-size: 4rem;
+  font-family: "Playfair Display", serif;
+  background-image: linear-gradient(to right, #0f151f, #e6b705, #332901);
+  background-clip: text;
+  color: transparent;
+}
+
 .footer__copyright {
   font-size: 1.4rem;
   font-weight: 100;
   color: #555;
   color: #fcf4ce;
+  color: #575b62;
 }
 
 .footer__content {
@@ -1586,6 +1598,8 @@ textarea::placeholder {
   text-transform: uppercase;
   color: #555;
   color: #fcf4ce;
+  color: #0f151f;
+  color: #575b62;
 
   justify-self: center;
 }
@@ -1608,6 +1622,13 @@ textarea::placeholder {
   height: 3rem;
   fill: #231f20;
   fill: #f6de6b;
+  fill: #0f151f;
+  background-image: linear-gradient(to right, #0f151f, #e6b705, #332901);
+  background-clip: text;
+  /* fill: transparent; */
+  mask-image: linear-gradient(to right, #0f151f, #e6b705, #332901);
+  mask-clip: text;
+
 }
 
 /* utilities */
