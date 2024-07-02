@@ -911,7 +911,7 @@ nav ul li a {
 .feature__icon-container {
   height: 10rem;
   width: 10rem;
-  border: solid 2px #f7f7f7;
+  border: solid 2px #cca204;
   background-color: #f7f7f7;
   border-radius: 1rem;
   box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1);
@@ -921,7 +921,22 @@ nav ul li a {
   align-self: center;
   cursor: pointer;
   transition: all 0.5s ease;
+  background-image: linear-gradient(to right, rgba(230, 181, 5, 0.275),rgba(230, 181, 5, 0.306));
+  position: relative;
+  z-index: -1;
 }
+
+.feature__icon-container::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, rgba(255, 227, 125, 0.275),rgba(230, 181, 5, 0.306));
+  z-index: 1;
+}
+
 
 .feature__icon-container:is(:hover) {
   transform: scale(1.2);
