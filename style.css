@@ -921,22 +921,15 @@ nav ul li a {
   align-self: center;
   cursor: pointer;
   transition: all 0.5s ease;
-  background-image: linear-gradient(to right, rgba(230, 181, 5, 0.275),rgba(230, 181, 5, 0.306));
+  /* background-image: linear-gradient(to right, rgba(230, 181, 5, 0.275),rgba(230, 181, 5, 0.306)); */
   position: relative;
   z-index: -1;
+  background-image: linear-gradient(to right, rgba(255, 227, 125, 0.275),rgba(230, 181, 5, 0.306)); 
 }
 
-.feature__icon-container::before {
-  content: '';
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: linear-gradient(to right, rgba(255, 227, 125, 0.275),rgba(230, 181, 5, 0.306));
-  z-index: 1;
+.feature__icon-container:hover {
+  background-image: unset;
 }
-
 
 .feature__icon-container:is(:hover) {
   transform: scale(1.2);
@@ -1063,6 +1056,7 @@ nav ul li a {
   background-size: cover;
   background-position: center;
 }
+
 .project--2 {
   background-image: url("project-3.png");
   background-size: cover;
@@ -1229,7 +1223,7 @@ nav ul li a {
 .feature__icon-box {
   height: 5rem;
   width: 5rem;
-  border-radius: 50%;
+  border-radius: .5rem;
 
   display: flex;
   justify-content: center;
