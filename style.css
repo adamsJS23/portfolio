@@ -1255,15 +1255,23 @@ nav ul li a {
 .feature__icon--quick {
   fill: #f2ce21;
   fill: #e6b705;
+  fill: #332901;
+
 }
 .feature__icon--detail {
+  
   fill: #e6b705;
+  fill: #332901;
 }
 .feature__icon--solving {
+  
   fill: #e6b705;
+  fill: #332901;
 }
 .feature__icon--team {
+  
   fill: #e6b705;
+  fill: #332901;
 }
 
 .feature__title {
