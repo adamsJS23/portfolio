@@ -32,13 +32,17 @@
     </title>
   </head>
   <body>
+    <!-- HEADER -->
     <div class="all-header">
       <img class="logo" src="logo_yellow.png" alt=" Site Logo" />
     </div>
+    <!--  -->
+    <!-- MAIN -->
     <div class="all-wrapper">
+      <!-- TAGS -->
       <ul class="tags">
         <li class="tag">React</li>
-        <li class="tag">HTML CSS</li>
+        <li class="tag tag--active">HTML CSS</li>
         <li class="tag">JavaScript</li>
         <li class="tag">NodeJs</li>
         <li class="tag">Puppeter</li>
@@ -47,23 +51,87 @@
         <li class="tag">landing Page</li>
         <li class="tag">MongoDB</li>
       </ul>
+      <!-- PROJECTS -->
       <div class="projects">
-        <figure class="project project--1">
-          <span class="fresh">Fresh</span>
+        <!-- PROJECT 1 -->
+        <span class="fresh">Fresh</span>
+        <figure class="a-project a-project--1">
+          <div class="project__img">&nbsp;</div>
+          <div class="a-project-content">
+            <ul class="social-icons">
+              <li class="social-icon-box">
+                <svg class="social-icon">
+                  <use xlink:href="sprite.svg#icon-emoji-happy"></use>
+                </svg>
+              </li>
+              <li class="social-icon-box">
+                <svg class="social-icon">
+                  <use xlink:href="sprite.svg#icon-emoji-sad"></use>
+                </svg>
+              </li>
+            </ul>
+            <div class="a-header">
+              <img
+                class="project-logo"
+                src="SVG/logo-sponify.svg"
+                alt="Sponify logo"
+              />
+              <p class="project-name">sponify</p>
+            </div>
+            <div class="project-description">
+              <div class="project-description-box">
+                <svg class="project-icon">
+                  <use xlink:href="sprite.svg#icon-calendar"></use>
+                </svg>
+                <p class="project-date">September 2023</p>
+              </div>
+              <div class="project-description-box">
+                <svg class="project-icon">
+                  <use xlink:href="sprite.svg#icon-language"></use>
+                </svg>
+                <p class="project-date">React Sass NodeJs G. Analitycs</p>
+              </div>
+            </div>
+          </div>
+          <div class="project-cta-box">
+            <a href="#" class="project-cta-btn">Learn More &rarr;</a>
+          </div>
+        </figure>
+        <!-- PROJECT 2 -->
+        <figure class="project project--2">
+          <div class="project__content">
+            <div class="project__content-text">
+              <img
+                class="project__logo"
+                src="project-2.png"
+                alt="Project--1 logo"
+              />
+              <p class="project__name">Connectica</p>
+              <p class="project__date">April 2023</p>
+            </div>
+            <p class="project__content-tech-list">
+              <span>HTML</span><span>CSS</span><span>Sass</span><span>Git</span
+              ><span>React</span>
+            </p>
+          </div>
+        </figure>
+        <!-- PROJECT 3 -->
+        <figure class="project project--3">
+          <span class="valuable">Valuable</span>
 
           <div class="project__content">
             <div class="project__content-text">
               <img
                 class="project__logo"
-                src="project-1.png"
+                src="project-3.png"
                 alt="Project--1 logo"
               />
-              <p class="project__name">Spoonfy</p>
-              <p class="project__date">June 2024</p>
+              <p class="project__name">Desarollo</p>
+              <p class="project__date">July 2023</p>
             </div>
             <p class="project__content-tech-list">
-              <span>Google Analitycs</span><span>Sass</span><span>Git</span
-              ><span>React</span>
+              <span>Sass</span><span>Git</span><span>React</span
+              ><span>Google Analitycs</span>
             </p>
           </div>
         </figure>
