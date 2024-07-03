@@ -469,6 +469,7 @@ nav ul li a {
   border-radius: 100vmax;
   box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.3);
   transition: ease all 0.3s;
+  cursor: pointer;
 }
 
 .btn-all-project:hover {
@@ -924,7 +925,11 @@ nav ul li a {
   /* background-image: linear-gradient(to right, rgba(230, 181, 5, 0.275),rgba(230, 181, 5, 0.306)); */
   position: relative;
   z-index: -1;
-  background-image: linear-gradient(to right, rgba(255, 227, 125, 0.275),rgba(230, 181, 5, 0.306)); 
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 227, 125, 0.275),
+    rgba(230, 181, 5, 0.306)
+  );
 }
 
 .feature__icon-container:hover {
@@ -981,6 +986,12 @@ nav ul li a {
   padding: 0.8rem 1.6rem;
   cursor: pointer;
   transition: all ease 0.5s;
+}
+
+.tag--active {
+  background-color: transparent;
+  color: #302802;
+  box-shadow: inset 0 0 0 1px #302802;
 }
 
 .tag:hover {
@@ -1223,7 +1234,7 @@ nav ul li a {
 .feature__icon-box {
   height: 5rem;
   width: 5rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 
   display: flex;
   justify-content: center;
@@ -1256,20 +1267,16 @@ nav ul li a {
   fill: #f2ce21;
   fill: #e6b705;
   fill: #332901;
-
 }
 .feature__icon--detail {
-  
   fill: #e6b705;
   fill: #332901;
 }
 .feature__icon--solving {
-  
   fill: #e6b705;
   fill: #332901;
 }
 .feature__icon--team {
-  
   fill: #e6b705;
   fill: #332901;
 }
@@ -1645,7 +1652,6 @@ textarea::placeholder {
   /* fill: transparent; */
   mask-image: linear-gradient(to right, #0f151f, #e6b705, #332901);
   mask-clip: text;
-
 }
 
 /* utilities */
@@ -1721,4 +1727,103 @@ textarea::placeholder {
   100% {
     transform: scale(1);
   }
+}
+
+/* **********************************************************
+*************************************************************
+**************ALL PROJECTS**********************************
+************************************************************
+********************************************************** */
+
+.all-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+}
+
+.all-header {
+  background-color: #191400;
+  display: grid;
+  place-content: center;
+  margin-bottom: 5rem;
+  padding: 2rem 0;
+}
+
+.a-project {
+  background-image: url("project-15.png");
+  background-size: cover;
+  height: auto;
+  position: relative;
+  box-shadow: 0 3rem 7rem rgba(0, 0, 0, 0.15);
+}
+
+.social-icons {
+  /* background-color: #191400;
+  padding: .5rem;
+  border-radius: 100vmax; */
+  bottom: 30px;
+  right: 10px;
+  position: absolute;
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icon-box{
+  padding: 1rem;
+  border-radius: 50%;
+  border: 1px solid #33302a;
+  display: grid;
+  place-content: center ;
+  background-color: #191400;
+
+}
+
+.social-icon{
+  
+  fill: #ffcb05;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.a-header{
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.project-name {
+  font-family: 'Playfair Display',serif;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.project-description-box {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.project-description-box p{
+  font-size: 2rem;
+}
+
+.a-project-content {
+  background-color: #fff;
+  padding: 2rem 4rem;
+}
+
+.project-cta-box{
+  background-color: #f7f7f7;
+  padding: 2rem 4rem;
+}
+
+
+.project-logo{
+  width: 3rem;
+  height: 3rem;
+}
+
+.project-icon{
+  width: 2.4rem;
+  height: 2.4rem;
 }
