@@ -1749,12 +1749,16 @@ textarea::placeholder {
   padding: 2rem 0;
 }
 
+.a-projects{
+  min-height: 50rem;
+}
+
 .a-project {
   background-image: url("project-15.png");
   background-size: cover;
   height: 20rem;
-  position: relative;
-  box-shadow: 0 3rem 7rem rgba(0, 0, 0, 0.15);
+  /* position: relative; */
+  /* box-shadow: 0 3rem 7rem rgba(0, 0, 0, 0.15); */
 }
 
 .social-icons {
@@ -1874,25 +1878,29 @@ textarea::placeholder {
   justify-content: center;
   gap: .8rem;
   list-style: none;
+  padding: 4rem 0;
 }
 
 .pagination__item {
 }
 
 .pagination__link {
-  box-sizing: content-box;
+  /* box-sizing: content-box; */
   display: grid;
   place-content: center;
-  height: 2rem;
-  width: 2rem;
-  padding: 1rem;
+  height: 5rem;
+  width: 5rem;
+  /* padding: 1rem; */
   text-decoration: none;
   background-color: #191400;
   color: #fff;
   border-radius: 50%;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 500;
 }
 
 .pagination__link--active {
+  background-color: #fff;
+  color: #191400;
+  border: solid 1px #191400;
 }
