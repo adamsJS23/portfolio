@@ -29,6 +29,7 @@ body {
   font-family: "Inter", sans-serif;
   color: #231f20;
   background-color: #f1f1f1;
+  background-color: #f7f7f7;
 }
 
 section {
@@ -1749,8 +1750,9 @@ textarea::placeholder {
   padding: 2rem 0;
 }
 
-.a-projects{
+.a-projects {
   min-height: 50rem;
+  background-color: #f7f7f7;
 }
 
 .a-project {
@@ -1876,7 +1878,7 @@ textarea::placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: .8rem;
+  gap: 0.8rem;
   list-style: none;
   padding: 4rem 0;
 }
@@ -1903,4 +1905,38 @@ textarea::placeholder {
   background-color: #fff;
   color: #191400;
   border: solid 1px #191400;
+}
+
+/* ********FOOTER******** */
+.a-footer {
+  padding: 4rem 0;
+  background-color: #191400;
+}
+
+.a-footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.a-footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer__navigation {
+  list-style: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer-link {
+  color: #fff;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+.a-footer .footer__copyright {
+  font-size: 1.6rem;
 }
