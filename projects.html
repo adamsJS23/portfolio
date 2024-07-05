@@ -54,22 +54,11 @@
       <!-- PROJECTS -->
       <div class="a-projects projects">
         <!-- PROJECT 1 -->
-        <span class="fresh">Fresh</span>
+        <!-- <span class="fresh a-fresh">Fresh</span> -->
         <figure class="a-project a-project--1">
-          <div class="project__img">&nbsp;</div>
+          <div class="project-image"></div>
           <div class="a-project-content">
-            <!-- <ul class="social-icons">
-              <li class="social-icon-box">
-                <svg class="social-icon">
-                  <use xlink:href="sprite.svg#icon-emoji-happy"></use>
-                </svg>
-              </li>
-              <li class="social-icon-box">
-                <svg class="social-icon">
-                  <use xlink:href="sprite.svg#icon-emoji-sad"></use>
-                </svg>
-              </li>
-            </ul> -->
+            
             <div class="a-header">
               <div class="header-left">
                 <img
@@ -79,12 +68,6 @@
                 />
                 <p class="project-name">sponify</p>
               </div>
-              <!-- <div class="project-description-box header-right">
-                <svg class="project-icon">
-                  <use xlink:href="sprite.svg#icon-calendar"></use>
-                </svg>
-                <p class="project-date">Sept 2023</p>
-              </div> -->
             </div>
 
             <div class="project-row">
@@ -96,7 +79,7 @@
               </div>
               <div class="project-description-box header-right">
                 <svg class="project-icon">
-                  <use xlink:href="sprite.svg#icon-calendar"></use>
+                  <use xlink:href="sprite.svg#icon-loop"></use>
                 </svg>
                 <p class="project-date">L.Update: Jan 24</p>
               </div>
@@ -104,13 +87,13 @@
             <div class="project-row">
               <div class="project-description-box header-right">
                 <svg class="project-icon">
-                  <use xlink:href="sprite.svg#icon-calendar"></use>
+                  <use xlink:href="sprite.svg#icon-eye"></use>
                 </svg>
                 <p class="project-date">200 Views</p>
               </div>
               <div class="project-description-box header-right">
                 <svg class="project-icon">
-                  <use xlink:href="sprite.svg#icon-calendar"></use>
+                  <use xlink:href="sprite.svg#icon-flash"></use>
                 </svg>
                 <p class="project-date">Difficulty: Easy</p>
               </div>
@@ -118,13 +101,13 @@
             <div class="project-row">
               <div class="project-description-box header-right">
                 <svg class="project-icon">
-                  <use xlink:href="sprite.svg#icon-calendar"></use>
+                  <use xlink:href="sprite.svg#icon-thumbs-up"></use>
                 </svg>
                 <p class="project-date">50 Likes</p>
               </div>
               <div class="project-description-box header-right">
                 <svg class="project-icon">
-                  <use xlink:href="sprite.svg#icon-calendar"></use>
+                  <use xlink:href="sprite.svg#icon-keyboard"></use>
                 </svg>
                 <p class="project-date">Built in 2 Weeks</p>
               </div>
@@ -140,7 +123,7 @@
             </div>
           </div>
           <div class="project-cta-box">
-            <a href="#" class="project-cta-btn">Learn More &rarr;</a>
+            <a href="#" class="project-cta-btn">Learn More <span>&rarr;</span></a>
           </div>
         </figure>
         <!-- PROJECT 2 -->
@@ -186,7 +169,14 @@
       <!-- PAGINATION -->
       <ul class="pagination">
         <li class="pagination__item">
-          <a href="#" class="pagination__link pagination__link--active">1</a>
+          <p href="#" class="pagination__link">
+            <svg class="project-icon icon-left">
+              <use xlink:href="sprite.svg#icon-chevron-thin-left"></use>
+            </svg>
+          </p>
+        </li>
+        <li class="pagination__item">
+          <a href="#" class="pagination__link ">1</a>
         </li>
         <li class="pagination__item">
           <a href="#" class="pagination__link">2</a>
@@ -195,7 +185,7 @@
           <a href="#" class="pagination__link">2</a>
         </li>
         <li class="pagination__item">
-          <a href="#" class="pagination__link">3</a>
+          <a href="#" class="pagination__link pagination__link--active">3</a>
         </li>
         <li class="pagination__item">
           <a href="#" class="pagination__link">4</a>
@@ -212,11 +202,13 @@
         <li class="pagination__item">
           <a href="#" class="pagination__link">8</a>
         </li>
+
         <li class="pagination__item">
-          <a href="#" class="pagination__link">9</a>
-        </li>
-        <li class="pagination__item">
-          <a href="#" class="pagination__link">10</a>
+          <p href="#" class="pagination__link">
+            <svg class="project-icon icon-right">
+              <use xlink:href="sprite.svg#icon-chevron-thin-right"></use>
+            </svg>
+          </p>
         </li>
       </ul>
     </div>
