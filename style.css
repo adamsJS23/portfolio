@@ -1750,17 +1750,25 @@ textarea::placeholder {
   padding: 2rem 0;
 }
 
+.a-fresh{
+  transform: rotate(45deg) translate(18rem, -12rem);
+}
+
 .a-projects {
   min-height: 50rem;
   background-color: #f7f7f7;
 }
 
 .a-project {
+  background-color: #fff;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.project-image {
   background-image: url("project-15.png");
   background-size: cover;
   height: 20rem;
-  /* position: relative; */
-  /* box-shadow: 0 3rem 7rem rgba(0, 0, 0, 0.15); */
 }
 
 .social-icons {
@@ -1798,8 +1806,8 @@ textarea::placeholder {
 .header-left {
   flex: 1.7;
   display: flex;
-  align-items: center;
-  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .header-right {
@@ -1815,6 +1823,8 @@ textarea::placeholder {
   font-family: "Playfair Display", serif;
   font-size: 3rem;
   font-weight: 600;
+  margin-top: -1.5rem;
+  /* line-height: 1; */
 }
 
 .project-description-box {
@@ -1834,14 +1844,14 @@ textarea::placeholder {
 
 .project-cta-box {
   background-color: #f7f7f7;
-  padding: 2rem;
+  padding: 2.5rem 2rem;
+  border-top: 1px solid #f1f1f1;
 }
 
 .project-logo {
   width: 3.5rem;
   height: 3.5rem;
   display: inline-block;
-  transform: translateY(6px);
 }
 
 .project-icon {
@@ -1864,13 +1874,21 @@ textarea::placeholder {
 }
 
 .project-cta-btn {
-  padding: 1rem 3rem;
+  padding: 0.8rem 2rem;
   background-color: #ffcb05;
   text-decoration: none;
   border-radius: 100vmax;
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 1.8rem;
+  font-weight: 500;
   color: #191400;
+}
+
+.project-cta-btn span {
+  transition: margin-left ease 0.5s;
+}
+
+.project-cta-btn:hover span {
+  margin-left: .7rem;
 }
 
 /* ***********PAGINATION*********** */
@@ -1905,6 +1923,11 @@ textarea::placeholder {
   background-color: #fff;
   color: #191400;
   border: solid 1px #191400;
+}
+
+.icon-left,
+.icon-right {
+  fill: #fff;
 }
 
 /* ********FOOTER******** */
