@@ -358,7 +358,7 @@ nav ul li a {
 
 .left-col h1 {
   font-family: "Playfair Display", sans-serif;
-  font-size: 8rem;
+  font-size: 7rem;
   font-weight: 700;
   margin-bottom: 4rem;
   line-height: 1.1;
@@ -1962,7 +1962,7 @@ textarea::placeholder {
 ****************************************/
 
 .overlay {
-  /* display: none; */
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
