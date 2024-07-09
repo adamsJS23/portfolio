@@ -1875,10 +1875,39 @@ textarea::placeholder {
   height:calc(100% - 5rem) ;
 }
 
+.btn-carousel{
+  display: grid;
+  place-content: center;
+  height: 5rem;
+  width: 5rem;
+  background-color: #fff;
+  border-radius: 50%;
+  border:1px solid #191400 ;
+  position: absolute;
+  top: 40%;
+}
+
+.btn-carousel .project-icon{
+  height: 3.2rem;
+  width: 3.2rem;
+  fill: #191400;
+}
+
+.btn-carousel--left{
+  left: 0;
+  transform: translateX(-5.5rem);
+}
+
+.btn-carousel--right{
+right: 0;
+transform: translateX(5.5rem);
+}
+
 .popup__left {
   flex: 1.9;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .popup__left img {
