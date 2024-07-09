@@ -464,7 +464,6 @@ nav ul li a {
   margin-left: 1.5rem;
 }
 
-
 .btn-all-project {
   text-decoration: none;
   font-size: 2rem;
@@ -616,12 +615,8 @@ nav ul li a {
   }
 }
 
-
-
 /* *************************************************************
 *********** HERO IMAGE END INFINITE SCROLLING********************* */
-
-
 
 /* about me */
 .section-about {
@@ -1770,11 +1765,12 @@ textarea::placeholder {
 }
 
 .project-cta-btn span {
-  transition: margin-left ease 0.5s;
+  display: inline-block;
+  transition: transform ease 0.5s;
 }
 
 .project-cta-btn:hover span {
-  margin-left: 0.7rem;
+  transform: translateX(0.7rem);
 }
 
 /* ***********PAGINATION*********** */
@@ -1855,7 +1851,7 @@ textarea::placeholder {
 ****************************************/
 
 .overlay {
-  display: none;
+  /* display: none; */
   position: fixed;
   top: 0;
   left: 0;
@@ -1871,19 +1867,16 @@ textarea::placeholder {
   top: 50%;
   left: 50%;
   display: flex;
-  width: 80%;
+  width: 90%;
   transform: translate(-50%, -50%);
-  padding: 4rem;
+  padding: 4rem 4rem 4rem 6rem;
   background-color: #f7f7f7;
   border-radius: 1rem;
-  height: 100%;
-}
-
-.popup > * {
-  flex: 1;
+  height:calc(100% - 5rem) ;
 }
 
 .popup__left {
+  flex: 1.9;
   display: flex;
   flex-direction: column;
 }
@@ -1914,11 +1907,14 @@ textarea::placeholder {
 }
 
 .popup__right {
-  padding-left: 4rem;
+  flex: 1.1;
+  padding-left: 6rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .popup .heading-tertiary {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .popup h4 {
@@ -1926,14 +1922,14 @@ textarea::placeholder {
   font-size: 2rem;
   font-weight: 700;
   color: #231f20;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .popup p {
   font-size: 1.6rem;
   font-weight: 500;
   color: #231f20;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .popup .project-tech-list {
   font-size: 2rem;
@@ -1941,9 +1937,18 @@ textarea::placeholder {
 }
 
 .popup-btns {
+  margin-top: auto;
   display: flex;
   gap: 2rem;
   align-items: center;
+}
+
+.popup .project-row {
+  margin-bottom: 1rem;
+}
+
+.project-description-box p {
+  margin-bottom: 0;
 }
 
 .btn-go-live {
