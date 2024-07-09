@@ -618,25 +618,6 @@ nav ul li a {
 
 
 
-
-
-
-
-
-
-.tag-list {
-  margin: 0;
-  padding-inline: 0;
-  list-style: none;
-}
-
-.tag-list li {
-  padding: 1rem;
-  background: var(--clr-primary-400);
-  border-radius: 0.5rem;
-  box-shadow: 0 0.5rem 1rem -0.25rem var(--clr-primary-900);
-}
-
 /* *************************************************************
 *********** HERO IMAGE END INFINITE SCROLLING********************* */
 
@@ -1553,11 +1534,11 @@ textarea::placeholder {
   fill: #231f20;
   fill: #f6de6b;
   fill: #0f151f;
-  background-image: linear-gradient(to right, #0f151f, #e6b705, #332901);
-  background-clip: text;
+  /* background-image: linear-gradient(to right, #0f151f, #e6b705, #332901); */
+  /* background-clip: text; */
   /* fill: transparent; */
-  mask-image: linear-gradient(to right, #0f151f, #e6b705, #332901);
-  mask-clip: text;
+  /* mask-image: linear-gradient(to right, #0f151f, #e6b705, #332901); */
+  /* mask-clip: text; */
 }
 
 /* utilities */
