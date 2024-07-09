@@ -1917,6 +1917,33 @@ textarea::placeholder {
   margin-bottom: 1rem;
 }
 
+.popup__heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popup__heading .project-icon{
+  height: 3.2rem;
+  width: 3.2rem;
+  fill: #191400;
+}
+
+.popup__heading-btns div{
+  height: 5rem;
+  width: 5rem;
+  border: 2px solid #191400;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+
+}
+
+.popup__heading-btns{
+  display: flex;
+  gap: 1rem;
+}
+
 .popup h4 {
   font-family: "Playfair Display", sans-serif;
   font-size: 2rem;
@@ -1955,10 +1982,10 @@ textarea::placeholder {
   text-decoration: none;
   font-weight: 500;
   font-size: 2rem;
-  background-color: #ffcb05;
-  color: #231f20;
   background-color: #231f20;
+  background-color: #ffcb05;
   color: #fff;
+  color: #231f20;
   border-radius: 0.5rem;
   padding: 1rem 2rem;
   display: flex;
