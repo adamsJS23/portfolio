@@ -1879,6 +1879,22 @@ textarea::placeholder {
   height: calc(100% - 5rem);
 }
 
+.btn-close-popup{
+  display: grid;
+  place-content: center ;
+  background-color: rgb(250, 118, 118);
+  color: #fff;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 3rem;
+  font-weight: 500;
+  width: 3rem;
+  height: 3rem;
+  border-radius: .5rem;
+  text-decoration: none;
+}
+
 .btn-carousel {
   display: grid;
   place-content: center;
