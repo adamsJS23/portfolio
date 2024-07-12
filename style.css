@@ -1878,29 +1878,31 @@ textarea::placeholder {
 .btn-carousel{
   display: grid;
   place-content: center;
-  height: 5rem;
-  width: 5rem;
+  height: 4rem;
+  width: 4rem;
   background-color: #fff;
+  background-color: #ffcb05;
   border-radius: 50%;
-  border:1px solid #191400 ;
+  border-radius: .5rem;
+  /* border:1px solid #191400 ; */
   position: absolute;
   top: 40%;
 }
 
 .btn-carousel .project-icon{
-  height: 3.2rem;
-  width: 3.2rem;
+  height: 2.8rem;
+  width: 2.8rem;
   fill: #191400;
 }
 
 .btn-carousel--left{
   left: 0;
-  transform: translateX(-5.5rem);
+  transform: translateX(-4.8rem);
 }
 
 .btn-carousel--right{
 right: 0;
-transform: translateX(5.5rem);
+transform: translateX(4.8rem);
 }
 
 .popup__left {
