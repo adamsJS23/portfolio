@@ -1851,7 +1851,7 @@ textarea::placeholder {
 ****************************************/
 
 .overlay {
-  /* display: none; */
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -1860,6 +1860,10 @@ textarea::placeholder {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(10px);
+}
+
+.overlay:target {
+  display: block;
 }
 
 .popup {
@@ -1872,10 +1876,10 @@ textarea::placeholder {
   padding: 4rem 4rem 4rem 6rem;
   background-color: #f7f7f7;
   border-radius: 1rem;
-  height:calc(100% - 5rem) ;
+  height: calc(100% - 5rem);
 }
 
-.btn-carousel{
+.btn-carousel {
   display: grid;
   place-content: center;
   height: 4rem;
@@ -1883,26 +1887,26 @@ textarea::placeholder {
   background-color: #fff;
   background-color: #ffcb05;
   border-radius: 50%;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   /* border:1px solid #191400 ; */
   position: absolute;
   top: 40%;
 }
 
-.btn-carousel .project-icon{
+.btn-carousel .project-icon {
   height: 2.8rem;
   width: 2.8rem;
   fill: #191400;
 }
 
-.btn-carousel--left{
+.btn-carousel--left {
   left: 0;
   transform: translateX(-4.8rem);
 }
 
-.btn-carousel--right{
-right: 0;
-transform: translateX(4.8rem);
+.btn-carousel--right {
+  right: 0;
+  transform: translateX(4.8rem);
 }
 
 .popup__left {
@@ -1948,29 +1952,28 @@ transform: translateX(4.8rem);
   margin-bottom: 1rem;
 }
 
-.popup__heading{
+.popup__heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.popup__heading .project-icon{
+.popup__heading .project-icon {
   height: 3.2rem;
   width: 3.2rem;
   fill: #191400;
 }
 
-.popup__heading-btns div{
+.popup__heading-btns div {
   height: 5rem;
   width: 5rem;
   border: 2px solid #191400;
   border-radius: 50%;
   display: grid;
   place-content: center;
-
 }
 
-.popup__heading-btns{
+.popup__heading-btns {
   display: flex;
   gap: 1rem;
 }
